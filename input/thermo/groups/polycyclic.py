@@ -7124,7 +7124,7 @@ Fitted from species product29 from vinylCPD_H library.
 entry(
     index = 0,
     label = "s3_5_5_diene",
-    group = "OR{s3_5_5_diene_1_4}",
+    group = "OR{s3_5_5_diene_1_4, s3_5_5_diene_0_4}",
     thermo = None,
     shortDesc = u"""""",
     longDesc = 
@@ -7995,7 +7995,7 @@ entry(
     group = "OR{s4_6_8_ene_7}",
     thermo = None,
     shortDesc = u"""""",
-    longDesc = 
+    longDesc =
 u"""
 
 """,
@@ -8477,6 +8477,100 @@ Automated Estimation of Ring Strain Energies, Gasteiger, 1978 S, Cp copied from 
 """,
 )
 
+entry(
+    index = 0,
+    label = "s4_6_6_ben_ben",
+    group = "OR{s4_6_6_ben_ben_res1, s4_6_6_ben_ben_res2, s4_6_6_ben_ben_res3}",
+    thermo = None,
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+)
+
+entry(
+    index = 180,
+    label = "s4_6_6_ben_ben_res1",
+    group =
+"""
+1 * R!H u0 {3,B} {6,B} {8,B}
+2   R!H u0 {4,B} {5,B} {7,B}
+3   R!H u0 {1,B} {4,B}
+4   R!H u0 {2,B} {3,B}
+5   R!H u0 {2,B} {6,B}
+6   R!H u0 {1,B} {5,B}
+7   R!H u0 {2,B} {8,B}
+8   R!H u0 {1,B} {7,B}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0.711, 2.163, 2.154, 1.273, 0.527, 0.897, -1.267],'cal/(mol*K)'),
+        H298 = (165.718,'kcal/mol'),
+        S298 = (12.735,'cal/(mol*K)'),
+    ),
+    shortDesc=u"""Fitted to CBS-QB3 calculation""",
+    longDesc=
+    u"""
+    Fitted to CBS-QB3 calculation.
+    """,
+)
+
+entry(
+    index = 181,
+    label = "s4_6_6_ben_ben_res2",
+    group =
+"""
+1 * R!H u0 {3,S} {6,B} {8,B}
+2   R!H u0 {4,S} {5,B} {7,B}
+3   R!H u0 {1,S} {4,D}
+4   R!H u0 {2,S} {3,D}
+5   R!H u0 {2,B} {6,B}
+6   R!H u0 {1,B} {5,B}
+7   R!H u0 {2,B} {8,B}
+8   R!H u0 {1,B} {7,B}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([-2.829, -1.234, -0.797, -1.155, -1.114, -0.25, -0.824],'cal/(mol*K)'),
+        H298 = (156.978,'kcal/mol'),
+        S298 = (28.635,'cal/(mol*K)'),
+    ),
+    shortDesc=u"""Fitted to CBS-QB3 calculation""",
+    longDesc=
+    u"""
+    Fitted to CBS-QB3 calculation.
+    """,
+)
+
+entry(
+    index = 182,
+    label = "s4_6_6_ben_ben_res3",
+    group =
+"""
+1 * R!H u0 {3,S} {6,D} {8,S}
+2   R!H u0 {4,S} {5,D} {7,S}
+3   R!H u0 {1,S} {4,D}
+4   R!H u0 {2,S} {3,D}
+5   R!H u0 {2,D} {6,S}
+6   R!H u0 {1,D} {5,S}
+7   R!H u0 {2,S} {8,D}
+8   R!H u0 {1,S} {7,D}
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([0.711, 2.163, 2.154, 1.273, 0.527, 0.897, -1.267], 'cal/(mol*K)'),
+        H298=(165.718, 'kcal/mol'),
+        S298=(12.735, 'cal/(mol*K)'),
+    ),
+    shortDesc=u"""""",
+    longDesc=
+    u"""
+    Copy of res 1 correction.
+    """,
+)
+
+
 tree(
 """
 L1: PolycyclicRing
@@ -8787,6 +8881,7 @@ L1: PolycyclicRing
         L3: s3_5_5_ane
         L3: s3_5_5_diene
             L4: s3_5_5_diene_1_4
+            L4: s3_5_5_diene_0_4
     L2: s3_5_6
         L3: s3_5_6_ane
         L3: s3_5_6_ene
@@ -8819,6 +8914,10 @@ L1: PolycyclicRing
             L4: s3_6_7_diene_6_9-0
     L2: s4_6_6
         L3: s4_6_6_ane
+        L3: s4_6_6_ben_ben
+            L4: s4_6_6_ben_ben_res1
+            L4: s4_6_6_ben_ben_res2
+            L4: s4_6_6_ben_ben_res3
     L2: s4_6_8
         L3: s4_6_8_ane
         L3: s4_6_8_ene
