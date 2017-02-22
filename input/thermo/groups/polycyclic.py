@@ -7124,7 +7124,7 @@ Fitted from species product29 from vinylCPD_H library.
 entry(
     index = 0,
     label = "s3_5_5_diene",
-    group = "OR{s3_5_5_diene_1_4, s3_5_5_diene_0_4}",
+    group = "OR{s3_5_5_diene_1_4}",
     thermo = None,
     shortDesc = u"""""",
     longDesc = 
@@ -8881,7 +8881,6 @@ L1: PolycyclicRing
         L3: s3_5_5_ane
         L3: s3_5_5_diene
             L4: s3_5_5_diene_1_4
-            L4: s3_5_5_diene_0_4
     L2: s3_5_6
         L3: s3_5_6_ane
         L3: s3_5_6_ene
