@@ -296,7 +296,7 @@ The high-pressure limit kinetics was taken. Troe coefficients are:
 entry(
     index = 20,
     label = "CH3 + CH3 <=> C2H6",
-    degeneracy = 1,
+    degeneracy = 0.5,
     kinetics = Arrhenius(A=(9.45e+14, 'cm^3/(mol*s)'), n=-0.538, Ea=(135.1, 'cal/mol'), T0=(1, 'K'), Tmin=(200, 'K'), Tmax=(2000, 'K')),
     rank = 2,
     shortDesc = u"""CASPT2/cc-pvdz""",
@@ -328,7 +328,7 @@ doi: 10.1039/B515914H
 entry(
     index = 22,
     label = "C2H5 + C2H5 <=> C4H10",
-    degeneracy = 1,
+    degeneracy = 0.5,
     kinetics = Arrhenius(A=(8.73e+14, 'cm^3/(mol*s)'), n=-0.699, Ea=(-3.2, 'cal/mol'), T0=(1, 'K'), Tmin=(200, 'K'), Tmax=(2000, 'K')),
     rank = 2,
     shortDesc = u"""CASPT2/cc-pvdz""",
