@@ -1878,9 +1878,9 @@ entry(
 u"""
 Experimental measurements
 
-Michael Röhrig and Heinz Georg Wagner
-A kinetic study about the reactions of NH(X3Σ−) with hydrocarbons part 1: Saturated hydrocarbons and acetaldehyde
-Berichte der Bunsengesellschaft für physikalische Chemie Volume 98, Issue 6, pages 858–863, June 1994
+Michael Rohrig and Heinz Georg Wagner
+A kinetic study about the reactions of NH(X3\sigma\minus) with hydrocarbons part 1: Saturated hydrocarbons and acetaldehyde
+Berichte der Bunsengesellschaft fur physikalische Chemie Volume 98, Issue 6, pages 858-863, June 1994
 DOI: 10.1002/bbpc.19940980615
 """,
 )
@@ -1903,9 +1903,9 @@ entry(
 u"""
 Experimental measurements
 
-Michael Röhrig and Heinz Georg Wagner
-A kinetic study about the reactions of NH(X3Σ−) with hydrocarbons part 1: Saturated hydrocarbons and acetaldehyde
-Berichte der Bunsengesellschaft für physikalische Chemie Volume 98, Issue 6, pages 858–863, June 1994
+Michael Rohrig and Heinz Georg Wagner
+A kinetic study about the reactions of NH(X3\sigma\minus) with hydrocarbons part 1: Saturated hydrocarbons and acetaldehyde
+Berichte der Bunsengesellschaft fur physikalische Chemie Volume 98, Issue 6, pages 858-863, June 1994
 DOI: 10.1002/bbpc.19940980615
 """,
 )
@@ -1928,8 +1928,9 @@ entry(
 u"""
 calculated at UQCISD(T)/6-311G** level
 Zhen-Feng Xu and Jia-Zhong Sun
-Theoretical Study on the Reaction Path and Variational Rate Constant of the Reaction HNCO + NH → NCO + NH2
-J. Phys. Chem. A, 1998, 102 (7), pp 1194–1199
+
+Theoretical Study on the Reaction Path and Variational Rate Constant of the Reaction HNCO + NH -> NCO + NH2
+J. Phys. Chem. A, 1998, 102 (7), pp 1194-1199
 DOI: 10.1021/jp972959n
 """,
 )
