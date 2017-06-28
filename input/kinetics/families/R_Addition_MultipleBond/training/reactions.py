@@ -1246,3 +1246,39 @@ Training reaction, kinetics calculated by Lawrence Lai under the CBS-QB3 level o
 More information can be found on pharose ~laitcl/Gaussian/HxBUpdated
 """,
 )
+
+entry(
+    index = 77,
+    label = "C9H11-1 <=> C8H8 + CH3",
+    degeneracy = 1,
+    kinetics = Arrhenius(
+        A = (2.59e+12, 's^-1'),
+        n = 0.733,
+        Ea = (35.918, 'kcal/mol'),
+        T0 = (1, 'K'),
+        comment = 'From 2012 Kislov',
+    ),
+    longDesc = 
+u"""
+Originally from reaction library: From 2012 Kislov
+""",
+)
+
+entry(
+    index = 78,
+    label = "C9H11-3 <=> C2H4 + C7H7-3",
+    degeneracy = 1,
+    kinetics = Arrhenius(
+        A = (2.717e+13, 's^-1'),
+        n = 0.0,
+        Ea = (22.905, 'kcal/mol'),
+        T0 = (1, 'K'),
+        comment = 'CBS-QB3',
+    ),
+    longDesc = 
+u"""
+Originally from reaction library: New_Phenyl_Propene_Pathway
+CBS-QB3
+""",
+)
+

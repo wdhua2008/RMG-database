@@ -15,7 +15,7 @@ recipe(actions=[
     ['BREAK_BOND', '*1', 1, '*4'],
     ['FORM_BOND', '*1', 1, '*3'],
     ['FORM_BOND', '*2', 1, '*4'],
-    ['CHANGE_BOND', '*2', '-1', '*3'],
+    ['CHANGE_BOND', '*2', -1, '*3'],
 ])
 
 boundaryAtoms = ["*1", "*2"]
