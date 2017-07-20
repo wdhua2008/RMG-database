@@ -3496,6 +3496,7 @@ entry(
 2    Os u1 {1,S}
 """,
     kinetics = None,
+    nodalDistance=15.0,
 )
 
 entry(
