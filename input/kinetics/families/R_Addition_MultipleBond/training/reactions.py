@@ -1233,3 +1233,16 @@ Ethylamine paper
 """,
 )
 
+entry(
+    index = 76,
+    label = "C4H9-1 + C8H8 <=> C12H17-1",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(236.006, 'cm^3/(mol*s)'), n=2.7878, Ea=(15.4228, 'kJ/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""Training reaction, kinetics calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Training reaction, kinetics calculated by Lawrence Lai under the CBS-QB3 level of theory, 2016
+More information can be found on pharose ~laitcl/Gaussian/HxBUpdated
+""",
+)
