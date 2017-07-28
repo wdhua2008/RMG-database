@@ -4236,14 +4236,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-37.6961,-35.2802,-32.024,-27.9105,-19.5952,-13.4391,-6.14448],'J/(mol*K)'),
-        H298 = (55.6806,'kJ/mol'),
-        S298 = (204.632,'J/(mol*K)'),
+        Cpdata = ([-9.758625,-7.938375,-6.298625,-4.973250,25.900375,-2.329125,-0.544500],'cal/(mol*K)'),
+        H298 = (6.844875,'kcal/mol'),
+        S298 = (54.938125,'cal/(mol*K)'),
     ),
-    shortDesc = u"""Fitted from thermo library values""",
-    longDesc = 
-u"""
-Fitted from molecule s2_5_6_diene_0_3 from Bicyclics_QM_190_isomorphic library.
+    shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
+    longDesc =
+u""""
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Model species was C1=CC=C2CCCC2[CH]1
 """,
 )
 
@@ -4948,7 +4950,7 @@ Fitted from species 2HINDENE from C10H11 library.
 entry(
     index = 184,
     label = "s2_5_6_ben",
-    group = 
+    group =
 """
 1 * R!H u0 {2,B} {3,S} {5,B}
 2   R!H u0 {1,B} {4,S} {6,B}
@@ -4962,14 +4964,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-18.9363,-17.9366,-16.3584,-14.6161,-10.2889,-6.03196,0.7134],'J/(mol*K)'),
-        H298 = (37.0186,'kJ/mol'),
-        S298 = (96.7074,'J/(mol*K)'),
+        Cpdata = ([-4.265000,-3.932000,-3.518000,-3.105000,-2.096000,-1.115000,0.398000],'cal/(mol*K)'),
+        H298 = (3.655000,'kcal/mol'),
+        S298 = (23.226000,'cal/(mol*K)'),
     ),
-    shortDesc = u"""Fitted from thermo library values""",
-    longDesc = 
-u"""
-Fitted from molecule s2_5_6_ben from Bicyclics_QM_190_isomorphic library.
+    shortDesc = u"""Fitted From Calculations from Hexylbenzene Library, Lawrence Lai""",
+    longDesc =
+u""""
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Model species used is Indane
 """,
 )
 
@@ -5612,14 +5616,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-42.7321,-39.342,-35.424,-30.3159,-20.1131,-12.6136,-3.65148],'J/(mol*K)'),
-        H298 = (28.0356,'kJ/mol'),
-        S298 = (178.832,'J/(mol*K)'),
+        Cpdata = ([-9.880625,-8.697375,-6.987625,-5.149250,25.835375,-2.359125,-0.032500],'cal/(mol*K)'),
+        H298 = (0.321875,'kcal/mol'),
+        S298 = (46.082125,'cal/(mol*K)'),
     ),
-    shortDesc = u"""Fitted from thermo library values""",
-    longDesc = 
-u"""
-Fitted from molecule s2_6_6_diene_0_3 from Bicyclics_QM_190_isomorphic library.
+    shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
+    longDesc =
+u""""
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Model species was CCC1CCCC2=CC=C[CH]C21
 """,
 )
 
@@ -6233,7 +6239,7 @@ Fitted from species prod4 from naphthalene_H library.
 entry(
     index = 185,
     label = "s2_6_6_ben",
-    group = 
+    group =
 """
 1    R!H u0 {2,B} {3,B} {5,S}
 2    R!H u0 {1,B} {4,B} {6,S}
@@ -6248,14 +6254,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-22.6673,-21.2954,-19.5434,-17.0615,-10.7908,-5.16852,3.2034],'J/(mol*K)'),
-        H298 = (24.5885,'kJ/mol'),
-        S298 = (78.9822,'J/(mol*K)'),
+        Cpdata = ([-3.873000,-4.106000,-3.778000,-3.131000,-2.168000,-1.114000,0.805000],'cal/(mol*K)'),
+        H298 = (-0.183000,'kcal/mol'),
+        S298 = (15.044000,'cal/(mol*K)'),
     ),
-    shortDesc = u"""Fitted from thermo library values""",
-    longDesc = 
-u"""
-Fitted from molecule s2_6_6_ben from Bicyclics_QM_190_isomorphic library.
+    shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
+    longDesc =
+u""""
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Model species used is Ethyltetralin
 """,
 )
 
