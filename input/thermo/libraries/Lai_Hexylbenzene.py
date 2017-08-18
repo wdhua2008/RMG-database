@@ -64,7 +64,9 @@ entry(
     shortDesc = u"""library value for Hexylbenzene calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: Six
+Location of calculations Pharos/home/laitcl/Gaussian/Hexylbenzene/Cantherm
 """,
 )
 
@@ -114,7 +116,9 @@ entry(
     shortDesc = u"""library value for Styrene calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: One
+Location of calculations Pharos/home/laitcl/Gaussian/Hexylbenzene/Cantherm/Styrene
 """,
 )
 
@@ -178,7 +182,9 @@ multiplicity 2
     shortDesc = u"""library value for Hexylbenzene Radical calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 5
+Location of calculations Pharos/home/laitcl/Gaussian/Hexylbenzene/Cantherm/rad1
 """,
 )
 
@@ -225,7 +231,9 @@ multiplicity 2
     shortDesc = u"""library value for Butyl Radical calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 3
+Location of calculations Pharos/home/laitcl/Gaussian/Hexylbenzene/Cantherm/Butyl
 """,
 )
 
@@ -276,7 +284,9 @@ entry(
     shortDesc = u"""library value for Ethylbenzene calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 2
+Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Ethylbenzene
 """,
 )
 
@@ -327,7 +337,9 @@ multiplicity 2
     shortDesc = u"""library value for Ethylbenzyl Radical1 calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 1
+Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Ethylbenzyl
 """,
 )
 
@@ -381,7 +393,9 @@ entry(
     shortDesc = u"""library value for Propylbenzene calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 3
+Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Propylbenzene
 """,
 )
 
@@ -436,7 +450,9 @@ multiplicity 2
     shortDesc = u"""library value for Propylbenzyl Radical1 calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 2
+Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Propylbenzyl
 """,
 )
 
@@ -493,7 +509,9 @@ entry(
     shortDesc = u"""library value for Butylbenzene calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 4
+Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Butylbenzene
 """,
 )
 
@@ -550,7 +568,9 @@ multiplicity 2
     shortDesc = u"""library value for Butylbenzyl Radical1 calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 3
+Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Butylbenzyl
 """,
 )
 
@@ -610,7 +630,9 @@ entry(
     shortDesc = u"""library value for Pentylbenzene calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 5
+Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Pentylbenzene
 """,
 )
 
@@ -671,7 +693,9 @@ multiplicity 2
     shortDesc = u"""library value for Pentylbenzyl Radical1 calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 4
+Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Pentylbenzyl
 """,
 )
 
@@ -718,7 +742,9 @@ multiplicity 2
     shortDesc = u"""Calculation for Benzyl done by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Toluene/Cantherm/Benzyl
 """,
 )
 
@@ -766,7 +792,9 @@ entry(
     shortDesc = u"""Calculation for Toluene done by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 1 - Note: Free Rotors have been found to yield extremely close results
+Location of calculations Pharos/home/laitcl/Gaussian/Toluene/Cantherm/Toluene
 """,
 )
 
@@ -817,7 +845,9 @@ entry(
     shortDesc = u"""library value for Indane calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Indane/Cantherm/Indane
 """,
 )
 
@@ -871,7 +901,9 @@ multiplicity 2
     shortDesc = u"""library value for Indane Radical calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Indane/Cantherm/IndaneRad
 """,
 )
 
@@ -932,7 +964,9 @@ entry(
     shortDesc = u"""library value for Ethyltetralin calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 2
+Location of calculations Pharos/home/laitcl/Gaussian/Ethyltetralin/Cantherm/Ethyltetralin
 """,
 )
 
@@ -995,7 +1029,9 @@ multiplicity 2
     shortDesc = u"""library value for Ethyltetralin Radical calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 2
+Location of calculations Pharos/home/laitcl/Gaussian/Ethyltetralin/Cantherm/EthyltetralinRad
 """,
 )
 
@@ -1045,7 +1081,9 @@ multiplicity 2
     shortDesc = u"""library value for Ethyltetralin Radical calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 4
+Location of calculations Pharos/home/laitcl/Gaussian/HxBUpdated/Cantherm/Pentyl
 """,
 )
 
@@ -1109,7 +1147,9 @@ multiplicity 2
     shortDesc = u"""library value for Hexylbenzene Radical 2 calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 6
+Location of calculations Pharos/home/laitcl/Gaussian/HxBRadicals/Cantherm/Rad2
 """,
 )
 
@@ -1173,7 +1213,9 @@ multiplicity 2
     shortDesc = u"""library value for Hexylbenzene Radical 3 calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 6
+Location of calculations Pharos/home/laitcl/Gaussian/HxBRadicals/Cantherm/Rad3
 """,
 )
 
@@ -1237,7 +1279,9 @@ multiplicity 2
     shortDesc = u"""library value for Hexylbenzene Radical 4 calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 6
+Location of calculations Pharos/home/laitcl/Gaussian/HxBRadicals/Cantherm/Rad4
 """,
 )
 
@@ -1301,7 +1345,9 @@ multiplicity 2
     shortDesc = u"""library value for Hexylbenzene Radical 5 calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 6
+Location of calculations Pharos/home/laitcl/Gaussian/HxBRadicals/Cantherm/Rad5
 """,
 )
 
@@ -1365,7 +1411,9 @@ multiplicity 2
     shortDesc = u"""library value for Hexylbenzene Radical 6 calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 6
+Location of calculations Pharos/home/laitcl/Gaussian/HxBRadicals/Cantherm/Rad6
 """,
 )
 
@@ -1416,7 +1464,9 @@ multiplicity 2
     shortDesc = u"""library value for ToluenePlusHOrtho calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 1
+Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/ToluenePlusHOrtho
 """,
 )
 
@@ -1467,7 +1517,9 @@ multiplicity 2
     shortDesc = u"""library value for ToluenePlusHMeta calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 1
+Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/ToluenePlusHMeta
 """,
 )
 
@@ -1519,7 +1571,9 @@ multiplicity 2
     shortDesc = u"""library value for ToluenePlusHPara calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 1
+Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/ToluenePlusHPara
 """,
 )
 
@@ -1570,7 +1624,9 @@ multiplicity 2
     shortDesc = u"""library value for ToluenePlusHSub calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 1
+Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/ToluenePlusHSub
 """,
 )
 
@@ -1636,7 +1692,9 @@ multiplicity 2
     shortDesc = u"""library value for HexylbenzenePlusHOrtho calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 6
+Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/HxBPlusHOrtho
 """,
 )
 
@@ -1702,7 +1760,9 @@ multiplicity 2
     shortDesc = u"""library value for HexylbenzenePlusHMeta calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 6
+Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/HxBPlusHMeta
 """,
 )
 
@@ -1769,7 +1829,9 @@ multiplicity 2
     shortDesc = u"""library value for HexylbenzenePlusHPara calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 6
+Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/HxBPlusHPara
 """,
 )
 
@@ -1836,7 +1898,9 @@ multiplicity 2
     shortDesc = u"""library value for HexylbenzenePlusHSub calculated by Lawrence Lai""",
     longDesc = 
 u"""
-
+Level of theory: CBS-QB3
+Hindered Rotors Included: 6
+Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/HxBPlusHSub
 """,
 )
 
