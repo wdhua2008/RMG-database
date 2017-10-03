@@ -4208,14 +4208,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-38.1067,-39.288,-37.6375,-33.3805,-24.832,-17.3106,-9.09196],'J/(mol*K)'),
-        H298 = (65.0161,'kJ/mol'),
-        S298 = (206.507,'J/(mol*K)'),
+        Cpdata = ([-8.745000,-9.020000,-8.632000,-7.604000,-5.545000,-3.763000,-1.896000],'cal/(mol*K)'),
+        H298 = (10.102000,'kcal/mol'),
+        S298 = (50.304000,'cal/(mol*K)'),
     ),
-    shortDesc = u"""Fitted from thermo library values""",
+    shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_0_2 from Bicyclics_QM_190_isomorphic library.
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Model species was C1=CCC2CCCC2=C1
 """,
 )
 
@@ -4236,16 +4238,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-9.758625,-7.938375,-6.298625,-4.973250,25.900375,-2.329125,-0.544500],'cal/(mol*K)'),
-        H298 = (6.844875,'kcal/mol'),
-        S298 = (54.938125,'cal/(mol*K)'),
+        Cpdata = ([-8.664000,-8.012000,-7.206000,-6.217000,-4.239000,-2.796000,-1.157000],'cal/(mol*K)'),
+        H298 = (6.554000,'kcal/mol'),
+        S298 = (49.142000,'cal/(mol*K)'),
     ),
     shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
     longDesc =
 u""""
 Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
 
-Model species was C1=CC=C2CCCC2[CH]1
+Model species was C=1CC=C2CCCC2C1
 """,
 )
 
@@ -4378,14 +4380,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-37.026,-38.605,-37.5762,-33.1727,-24.9369,-17.2835,-9.61384],'J/(mol*K)'),
-        H298 = (70.9548,'kJ/mol'),
-        S298 = (222.284,'J/(mol*K)'),
+        Cpdata = ([-8.453000,-8.770000,-8.511000,-7.463000,-5.515000,-3.726000,-2.021000],'cal/(mol*K)'),
+        H298 = (10.068000,'kcal/mol'),
+        S298 = (52.912000,'cal/(mol*K)'),
     ),
-    shortDesc = u"""Fitted from thermo library values""",
+    shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_1_3 from Bicyclics_QM_190_isomorphic library.
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Model species was C1=CC2CCCC2C=C1
 """,
 )
 
@@ -5587,14 +5591,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-41.1697,-42.9508,-41.3835,-35.9799,-25.3008,-16.5271,-7.06396],'J/(mol*K)'),
-        H298 = (63.4493,'kJ/mol'),
-        S298 = (189.537,'J/(mol*K)'),
+        Cpdata = ([-9.598000,-9.932000,-9.489000,-8.152000,-5.559000,-3.471000,-1.324000],'cal/(mol*K)'),
+        H298 = (4.953000,'kcal/mol'),
+        S298 = (45.449000,'cal/(mol*K)'),
     ),
-    shortDesc = u"""Fitted from thermo library values""",
+    shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_0_2 from Bicyclics_QM_190_isomorphic library.
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Model species was C1=CCC2CCCCC2=C1
 """,
 )
 
@@ -5616,16 +5622,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-9.880625,-8.697375,-6.987625,-5.149250,25.835375,-2.359125,-0.032500],'cal/(mol*K)'),
-        H298 = (0.321875,'kcal/mol'),
-        S298 = (46.082125,'cal/(mol*K)'),
+        Cpdata = ([-9.809000,-9.094000,-8.115000,-6.791000,-4.282000,-2.533000,-0.609000],'cal/(mol*K)'),
+        H298 = (-0.243000,'kcal/mol'),
+        S298 = (42.856000,'cal/(mol*K)'),
     ),
     shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
     longDesc =
 u""""
 Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
 
-Model species was CCC1CCCC2=CC=C[CH]C21
+Model species was C=1CC=C2CCCCC2C1
 """,
 )
 
@@ -5792,14 +5798,16 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-40.963,-41.2288,-39.5802,-34.4991,-24.6798,-15.8711,-6.70784],'J/(mol*K)'),
-        H298 = (49.5297,'kJ/mol'),
-        S298 = (182.032,'J/(mol*K)'),
+        Cpdata = ([-9.374000,-9.374000,-8.971000,-7.762000,-5.435000,-3.367000,-1.291000],'cal/(mol*K)'),
+        H298 = (4.291000,'kcal/mol'),
+        S298 = (45.288000,'cal/(mol*K)'),
     ),
-    shortDesc = u"""Fitted from thermo library values""",
+    shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_1_3 from Bicyclics_QM_190_isomorphic library.
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Model species was C=1C=CC2CCCCC2C1
 """,
 )
 
