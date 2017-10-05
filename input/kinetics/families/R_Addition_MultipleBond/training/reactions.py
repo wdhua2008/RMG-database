@@ -1243,7 +1243,7 @@ entry(
     longDesc = 
 u"""
 Training reaction, kinetics calculated by Lawrence Lai under the CBS-QB3 level of theory, 2016
-More information can be found on pharose ~laitcl/Gaussian/HxBUpdated
+More information can be found on pharos ~laitcl/Gaussian/HxBUpdated
 """,
 )
 
@@ -1281,4 +1281,80 @@ Originally from reaction library: New_Phenyl_Propene_Pathway
 CBS-QB3
 """,
 )
+
+entry(
+    index = 79,
+    label = "C12H18 + H <=> C12H19-1",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(1.75247e+08, 'cm^3/(mol*s)'), n = 1.70829, Ea = (25.4744, 'kJ/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""Training reaction, kinetics calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Training reaction, kinetics calculated by Lawrence Lai under the CBS-QB3 level of theory, 2017
+Hexylbenzene + H --> CCCCCCC1C=C[CH]C=C1
+More information can be found on pharos/home/laitcl/Gaussian/HAdditiontoRing
+""",
+)
+
+entry(
+    index = 80,
+    label = "C7H8-5 + H <=> C7H9-23",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(2.15859e+09, 'cm^3/(mol*s)'), n = 1.42903, Ea = (22.7647, 'kJ/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""Training reaction, kinetics calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Training reaction, kinetics calculated by Lawrence Lai under the CBS-QB3 level of theory, 2017
+Toluene + H --> CC1[CH]C=CCC=1
+More information can be found on pharos/home/laitcl/Gaussian/HAdditiontoRing
+""",
+)
+
+entry(
+    index = 81,
+    label = "C7H8-5 + H <=> C7H9-24",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(2.04885e+09, 'cm^3/(mol*s)'), n = 1.43982, Ea = (18.8871, 'kJ/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""Training reaction, kinetics calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Training reaction, kinetics calculated by Lawrence Lai under the CBS-QB3 level of theory, 2017
+Toluene + H --> CC1=C[CH]C=CC1
+More information can be found on pharos/home/laitcl/Gaussian/HAdditiontoRing
+""",
+)
+
+entry(
+    index = 82,
+    label = "C7H8-5 + H <=> C7H9-25",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(2.24659e+09, 'cm^3/(mol*s)'), n = 1.42368, Ea = (22.5731, 'kJ/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""Training reaction, kinetics calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Training reaction, kinetics calculated by Lawrence Lai under the CBS-QB3 level of theory, 2017
+Toluene + H --> CC1C=CC[CH]C=1
+More information can be found on pharos/home/laitcl/Gaussian/HAdditiontoRing
+""",
+)
+
+entry(
+    index = 83,
+    label = "C7H8-5 + H <=> C7H9-8",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(4.40866e+08, 'cm^3/(mol*s)'), n = 1.56916, Ea = (26.7856, 'kJ/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""Training reaction, kinetics calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Training reaction, kinetics calculated by Lawrence Lai under the CBS-QB3 level of theory, 2017
+Toluene + H --> CC1C=C[CH]C=C1
+More information can be found on pharos/home/laitcl/Gaussian/HAdditiontoRing
+""",
+)
+
 
