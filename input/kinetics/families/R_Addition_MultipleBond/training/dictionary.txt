@@ -2612,7 +2612,7 @@ multiplicity 2
 30 H u0 p0 c0 {12,S}
 31 H u0 p0 c0 {13,S}
 
-C7H8-23
+C7H9-23
 multiplicity 2
 1  C u0 p0 c0 {2,S} {9,S} {10,S} {11,S}
 2  C u0 p0 c0 {1,S} {3,D} {7,S}
@@ -2631,7 +2631,7 @@ multiplicity 2
 15 H u0 p0 c0 {5,S}
 16 H u0 p0 c0 {6,S}
 
-C7H8-24
+C7H9-24
 multiplicity 2
 1  C u0 p0 c0 {2,S} {9,S} {10,S} {11,S}
 2  C u0 p0 c0 {1,S} {3,D} {8,S}
@@ -2650,7 +2650,7 @@ multiplicity 2
 15 H u0 p0 c0 {8,S}
 16 H u0 p0 c0 {8,S}
 
-C7H8-25
+C7H9-25
 multiplicity 2
 1  C u0 p0 c0 {2,S} {9,S} {10,S} {11,S}
 2  C u0 p0 c0 {1,S} {3,D} {8,S}
