@@ -1299,7 +1299,7 @@ More information can be found on pharos/home/laitcl/Gaussian/HAdditiontoRing
 
 entry(
     index = 80,
-    label = "C7H8-5 + H <=> C7H9-23",
+    label = "C7H8-27 + H <=> C7H9-23",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.15859e+09, 'cm^3/(mol*s)'), n = 1.42903, Ea = (22.7647, 'kJ/mol'), T0=(1, 'K')),
     rank = 3,
@@ -1314,7 +1314,7 @@ More information can be found on pharos/home/laitcl/Gaussian/HAdditiontoRing
 
 entry(
     index = 81,
-    label = "C7H8-5 + H <=> C7H9-24",
+    label = "C7H8-28 + H <=> C7H9-24",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.04885e+09, 'cm^3/(mol*s)'), n = 1.43982, Ea = (18.8871, 'kJ/mol'), T0=(1, 'K')),
     rank = 3,
@@ -1329,7 +1329,7 @@ More information can be found on pharos/home/laitcl/Gaussian/HAdditiontoRing
 
 entry(
     index = 82,
-    label = "C7H8-5 + H <=> C7H9-25",
+    label = "C7H8-29 + H <=> C7H9-25",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.24659e+09, 'cm^3/(mol*s)'), n = 1.42368, Ea = (22.5731, 'kJ/mol'), T0=(1, 'K')),
     rank = 3,
@@ -1344,7 +1344,7 @@ More information can be found on pharos/home/laitcl/Gaussian/HAdditiontoRing
 
 entry(
     index = 83,
-    label = "C7H8-5 + H <=> C7H9-8",
+    label = "C7H8-30 + H <=> C7H9-26",
     degeneracy = 1,
     kinetics = Arrhenius(A=(4.40866e+08, 'cm^3/(mol*s)'), n = 1.56916, Ea = (26.7856, 'kJ/mol'), T0=(1, 'K')),
     rank = 3,
