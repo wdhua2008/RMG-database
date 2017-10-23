@@ -2,45 +2,63 @@
 # encoding: utf-8
 
 name = "Hexylbenzene"
-shortDesc = u""
+shortDesc = u"Project LIbrary for Hexylbenzene Pyrolysis and Supercritical Water treatment"
 longDesc = u"""
+This library is made by Lawrence Lai for the Hexylbenzene Pyrolysis and Supercritical Water Treatment
 
+This work is published in
+
+Lai, Lawrence, Gudiyella, Soumya, Liu, Mengjie, Green, William H. "Chemistry of Alkylaromatics Reconsidered". To be submitted to Energy and Fuels, 2017.
+
+Includes thermochemistry of alkylaromatics and many relevant compounds, calculated using the CBS-QB3 level of theory in June 2017.
+
+Specifics of the calculations performed:
+1. CBS-QB3 Level of theory was used after a B3LYP/6-311G(d,p) geometry optimization was performed
+2. CBS-QB3 Energy calculation was performed
+3. Frequency was calculated using B3LYP/CBSB7 iop(7/33=1) (Hessian was calculated)
+4. 1D Hindered Rotors were calculated for steps of 10 degrees up to the full 360 degree cycle, with geometry optimization on each step.
+5. All files generated were fed to Cantherm (June 2017).
+6. Frequency scaling factor was 0.99
+7. Bond additivity corrections were applied based on Petersson et al. 1998 (http://aip.scitation.org/doi/10.1063/1.477794)
+
+Disclaimer: The number of significant figures displayed does not reflect the accuracy of thermochemistry values. Sommers and Simmie esimates
+the error in enthalpy of formation by CBS-QB3 calculations to be + or - 2.4kcal/mol (http://pubs.acs.org/doi/abs/10.1021/acs.jpca.5b05448). 
 """
 entry(
     index = 1,
     label = "Hexylbenzene",
     molecule = 
 """
-1  C u0 p0 c0 {2,S} {13,S} {14,S} {15,S}
-2  C u0 p0 c0 {1,S} {3,S} {16,S} {17,S}
-3  C u0 p0 c0 {2,S} {4,S} {18,S} {19,S}
-4  C u0 p0 c0 {3,S} {5,S} {20,S} {21,S}
-5  C u0 p0 c0 {4,S} {6,S} {22,S} {23,S}
-6  C u0 p0 c0 {5,S} {7,S} {24,S} {25,S}
-7  C u0 p0 c0 {6,S} {8,D} {12,S}
-8  C u0 p0 c0 {7,D} {9,S} {26,S}
-9  C u0 p0 c0 {8,S} {10,D} {27,S}
-10 C u0 p0 c0 {9,D} {11,S} {28,S}
-11 C u0 p0 c0 {10,S} {12,D} {29,S}
-12 C u0 p0 c0 {7,S} {11,D} {30,S}
-13 H u0 p0 c0 {1,S}
-14 H u0 p0 c0 {1,S}
+1  C u0 p0 c0 {2,S} {4,S} {15,S} {16,S}
+2  C u0 p0 c0 {1,S} {3,S} {17,S} {18,S}
+3  C u0 p0 c0 {2,S} {5,S} {19,S} {20,S}
+4  C u0 p0 c0 {1,S} {6,S} {13,S} {14,S}
+5  C u0 p0 c0 {3,S} {7,S} {21,S} {22,S}
+6  C u0 p0 c0 {4,S} {23,S} {24,S} {25,S}
+7  C u0 p0 c0 {5,S} {8,B} {9,B}
+8  C u0 p0 c0 {7,B} {10,B} {26,S}
+9  C u0 p0 c0 {7,B} {12,B} {30,S}
+10 C u0 p0 c0 {8,B} {11,B} {27,S}
+11 C u0 p0 c0 {10,B} {12,B} {28,S}
+12 C u0 p0 c0 {9,B} {11,B} {29,S}
+13 H u0 p0 c0 {4,S}
+14 H u0 p0 c0 {4,S}
 15 H u0 p0 c0 {1,S}
-16 H u0 p0 c0 {2,S}
+16 H u0 p0 c0 {1,S}
 17 H u0 p0 c0 {2,S}
-18 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {2,S}
 19 H u0 p0 c0 {3,S}
-20 H u0 p0 c0 {4,S}
-21 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {3,S}
+21 H u0 p0 c0 {5,S}
 22 H u0 p0 c0 {5,S}
-23 H u0 p0 c0 {5,S}
+23 H u0 p0 c0 {6,S}
 24 H u0 p0 c0 {6,S}
 25 H u0 p0 c0 {6,S}
 26 H u0 p0 c0 {8,S}
-27 H u0 p0 c0 {9,S}
-28 H u0 p0 c0 {10,S}
-29 H u0 p0 c0 {11,S}
-30 H u0 p0 c0 {12,S}
+27 H u0 p0 c0 {10,S}
+28 H u0 p0 c0 {11,S}
+29 H u0 p0 c0 {12,S}
+30 H u0 p0 c0 {9,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -76,23 +94,22 @@ entry(
     label = "Styrene",
     molecule = 
 """
-1  C u0 p0 c0 {2,D} {9,S} {10,S}
-2  C u0 p0 c0 {1,D} {3,S} {11,S}
-3  C u0 p0 c0 {2,S} {4,D} {8,S}
-4  C u0 p0 c0 {3,D} {5,S} {12,S}
-5  C u0 p0 c0 {4,S} {6,D} {13,S}
-6  C u0 p0 c0 {5,D} {7,S} {14,S}
-7  C u0 p0 c0 {6,S} {8,D} {15,S}
-8  C u0 p0 c0 {3,S} {7,D} {16,S}
-9  H u0 p0 c0 {1,S}
-10 H u0 p0 c0 {1,S}
-11 H u0 p0 c0 {2,S}
-12 H u0 p0 c0 {4,S}
-13 H u0 p0 c0 {5,S}
-14 H u0 p0 c0 {6,S}
-15 H u0 p0 c0 {7,S}
+1  C u0 p0 c0 {2,B} {3,B} {4,S}
+2  C u0 p0 c0 {1,B} {5,B} {10,S}
+3  C u0 p0 c0 {1,B} {7,B} {14,S}
+4  C u0 p0 c0 {1,S} {8,D} {9,S}
+5  C u0 p0 c0 {2,B} {6,B} {11,S}
+6  C u0 p0 c0 {5,B} {7,B} {12,S}
+7  C u0 p0 c0 {3,B} {6,B} {13,S}
+8  C u0 p0 c0 {4,D} {15,S} {16,S}
+9  H u0 p0 c0 {4,S}
+10 H u0 p0 c0 {2,S}
+11 H u0 p0 c0 {5,S}
+12 H u0 p0 c0 {6,S}
+13 H u0 p0 c0 {7,S}
+14 H u0 p0 c0 {3,S}
+15 H u0 p0 c0 {8,S}
 16 H u0 p0 c0 {8,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -128,37 +145,35 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,S} {14,S} {15,S} {16,S}
-2  C u0 p0 c0 {1,S} {3,S} {17,S} {18,S}
-3  C u0 p0 c0 {2,S} {4,S} {19,S} {20,S}
-4  C u0 p0 c0 {3,S} {5,S} {21,S} {22,S}
-5  C u0 p0 c0 {4,S} {6,S} {23,S} {24,S}
-6  C u1 p0 c0 {5,S} {7,S} {8,S}
-7  H u0 p0 c0 {6,S}
-8  C u0 p0 c0 {6,S} {9,S} {13,D}
-9  C u0 p0 c0 {8,S} {10,D} {25,S}
-10 C u0 p0 c0 {9,D} {11,S} {26,S}
-11 C u0 p0 c0 {10,S} {12,D} {27,S}
-12 C u0 p0 c0 {11,D} {13,S} {28,S}
-13 C u0 p0 c0 {8,D} {12,S} {29,S}
-14 H u0 p0 c0 {1,S}
+1  C u0 p0 c0 {2,S} {3,S} {15,S} {16,S}
+2  C u0 p0 c0 {1,S} {4,S} {17,S} {18,S}
+3  C u0 p0 c0 {1,S} {5,S} {13,S} {14,S}
+4  C u0 p0 c0 {2,S} {7,S} {19,S} {20,S}
+5  C u0 p0 c0 {3,S} {21,S} {22,S} {23,S}
+6  C u0 p0 c0 {7,S} {8,B} {9,B}
+7  C u1 p0 c0 {4,S} {6,S} {24,S}
+8  C u0 p0 c0 {6,B} {10,B} {25,S}
+9  C u0 p0 c0 {6,B} {12,B} {29,S}
+10 C u0 p0 c0 {8,B} {11,B} {26,S}
+11 C u0 p0 c0 {10,B} {12,B} {27,S}
+12 C u0 p0 c0 {9,B} {11,B} {28,S}
+13 H u0 p0 c0 {3,S}
+14 H u0 p0 c0 {3,S}
 15 H u0 p0 c0 {1,S}
 16 H u0 p0 c0 {1,S}
 17 H u0 p0 c0 {2,S}
 18 H u0 p0 c0 {2,S}
-19 H u0 p0 c0 {3,S}
-20 H u0 p0 c0 {3,S}
-21 H u0 p0 c0 {4,S}
-22 H u0 p0 c0 {4,S}
+19 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {4,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {5,S}
 23 H u0 p0 c0 {5,S}
-24 H u0 p0 c0 {5,S}
-25 H u0 p0 c0 {9,S}
+24 H u0 p0 c0 {7,S}
+25 H u0 p0 c0 {8,S}
 26 H u0 p0 c0 {10,S}
 27 H u0 p0 c0 {11,S}
 28 H u0 p0 c0 {12,S}
-29 H u0 p0 c0 {13,S}
-
-
+29 H u0 p0 c0 {9,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -243,24 +258,24 @@ entry(
     label = "Ethylbenzene",
     molecule = 
 """
-1  C u0 p0 c0 {2,S} {9,S} {10,S} {11,S}
-2  C u0 p0 c0 {1,S} {3,S} {12,S} {13,S}
-3  C u0 p0 c0 {2,S} {4,D} {8,S}
-4  C u0 p0 c0 {3,D} {5,S} {14,S}
-5  C u0 p0 c0 {4,S} {6,D} {15,S}
-6  C u0 p0 c0 {5,D} {7,S} {16,S}
-7  C u0 p0 c0 {6,S} {8,D} {17,S}
-8  C u0 p0 c0 {3,S} {7,D} {18,S}
+1  C u0 p0 c0 {2,S} {3,S} {9,S} {10,S}
+2  C u0 p0 c0 {1,S} {11,S} {12,S} {13,S}
+3  C u0 p0 c0 {1,S} {4,B} {5,B}
+4  C u0 p0 c0 {3,B} {6,B} {14,S}
+5  C u0 p0 c0 {3,B} {8,B} {18,S}
+6  C u0 p0 c0 {4,B} {7,B} {15,S}
+7  C u0 p0 c0 {6,B} {8,B} {16,S}
+8  C u0 p0 c0 {5,B} {7,B} {17,S}
 9  H u0 p0 c0 {1,S}
 10 H u0 p0 c0 {1,S}
-11 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {2,S}
 12 H u0 p0 c0 {2,S}
 13 H u0 p0 c0 {2,S}
 14 H u0 p0 c0 {4,S}
-15 H u0 p0 c0 {5,S}
-16 H u0 p0 c0 {6,S}
-17 H u0 p0 c0 {7,S}
-18 H u0 p0 c0 {8,S}
+15 H u0 p0 c0 {6,S}
+16 H u0 p0 c0 {7,S}
+17 H u0 p0 c0 {8,S}
+18 H u0 p0 c0 {5,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -297,23 +312,23 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
-2  C u1 p0 c0 {1,S} {3,S} {4,S}
-3  H u0 p0 c0 {2,S}
-4  C u0 p0 c0 {2,S} {5,S} {9,D}
-5  C u0 p0 c0 {4,S} {6,D} {13,S}
-6  C u0 p0 c0 {5,D} {7,S} {14,S}
-7  C u0 p0 c0 {6,S} {8,D} {15,S}
-8  C u0 p0 c0 {7,D} {9,S} {16,S}
-9  C u0 p0 c0 {4,D} {8,S} {17,S}
+1  C u0 p0 c0 {3,S} {9,S} {10,S} {11,S}
+2  C u0 p0 c0 {3,S} {4,B} {5,B}
+3  C u1 p0 c0 {1,S} {2,S} {12,S}
+4  C u0 p0 c0 {2,B} {6,B} {13,S}
+5  C u0 p0 c0 {2,B} {8,B} {17,S}
+6  C u0 p0 c0 {4,B} {7,B} {14,S}
+7  C u0 p0 c0 {6,B} {8,B} {15,S}
+8  C u0 p0 c0 {5,B} {7,B} {16,S}
+9  H u0 p0 c0 {1,S}
 10 H u0 p0 c0 {1,S}
 11 H u0 p0 c0 {1,S}
-12 H u0 p0 c0 {1,S}
-13 H u0 p0 c0 {5,S}
+12 H u0 p0 c0 {3,S}
+13 H u0 p0 c0 {4,S}
 14 H u0 p0 c0 {6,S}
 15 H u0 p0 c0 {7,S}
 16 H u0 p0 c0 {8,S}
-17 H u0 p0 c0 {9,S}
+17 H u0 p0 c0 {5,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -349,27 +364,27 @@ entry(
     label = "Propylbenzene",
     molecule = 
 """
-1  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
-2  C u0 p0 c0 {1,S} {3,S} {13,S} {14,S}
-3  C u0 p0 c0 {2,S} {4,S} {15,S} {16,S}
-4  C u0 p0 c0 {3,S} {5,D} {9,S}
-5  C u0 p0 c0 {4,D} {6,S} {17,S}
-6  C u0 p0 c0 {5,S} {7,D} {18,S}
-7  C u0 p0 c0 {6,D} {8,S} {19,S}
-8  C u0 p0 c0 {7,S} {9,D} {20,S}
-9  C u0 p0 c0 {4,S} {8,D} {21,S}
+1  C u0 p0 c0 {2,S} {3,S} {10,S} {11,S}
+2  C u0 p0 c0 {1,S} {4,S} {12,S} {13,S}
+3  C u0 p0 c0 {1,S} {14,S} {15,S} {16,S}
+4  C u0 p0 c0 {2,S} {5,B} {6,B}
+5  C u0 p0 c0 {4,B} {7,B} {17,S}
+6  C u0 p0 c0 {4,B} {9,B} {21,S}
+7  C u0 p0 c0 {5,B} {8,B} {18,S}
+8  C u0 p0 c0 {7,B} {9,B} {19,S}
+9  C u0 p0 c0 {6,B} {8,B} {20,S}
 10 H u0 p0 c0 {1,S}
 11 H u0 p0 c0 {1,S}
-12 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {2,S}
 13 H u0 p0 c0 {2,S}
-14 H u0 p0 c0 {2,S}
+14 H u0 p0 c0 {3,S}
 15 H u0 p0 c0 {3,S}
 16 H u0 p0 c0 {3,S}
 17 H u0 p0 c0 {5,S}
-18 H u0 p0 c0 {6,S}
-19 H u0 p0 c0 {7,S}
-20 H u0 p0 c0 {8,S}
-21 H u0 p0 c0 {9,S}
+18 H u0 p0 c0 {7,S}
+19 H u0 p0 c0 {8,S}
+20 H u0 p0 c0 {9,S}
+21 H u0 p0 c0 {6,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -407,26 +422,26 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,S} {11,S} {12,S} {13,S}
-2  C u0 p0 c0 {1,S} {3,S} {14,S} {15,S}
-3  C u1 p0 c0 {2,S} {4,S} {5,S}
-4  H u0 p0 c0 {3,S}
-5  C u0 p0 c0 {3,S} {6,S} {10,D}
-6  C u0 p0 c0 {5,S} {7,D} {16,S}
-7  C u0 p0 c0 {6,D} {8,S} {17,S}
-8  C u0 p0 c0 {7,S} {9,D} {18,S}
-9  C u0 p0 c0 {8,D} {10,S} {19,S}
-10 C u0 p0 c0 {5,D} {9,S} {20,S}
+1  C u0 p0 c0 {2,S} {4,S} {10,S} {11,S}
+2  C u0 p0 c0 {1,S} {12,S} {13,S} {14,S}
+3  C u0 p0 c0 {4,S} {5,B} {6,B}
+4  C u1 p0 c0 {1,S} {3,S} {15,S}
+5  C u0 p0 c0 {3,B} {7,B} {16,S}
+6  C u0 p0 c0 {3,B} {9,B} {20,S}
+7  C u0 p0 c0 {5,B} {8,B} {17,S}
+8  C u0 p0 c0 {7,B} {9,B} {18,S}
+9  C u0 p0 c0 {6,B} {8,B} {19,S}
+10 H u0 p0 c0 {1,S}
 11 H u0 p0 c0 {1,S}
-12 H u0 p0 c0 {1,S}
-13 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {2,S}
+13 H u0 p0 c0 {2,S}
 14 H u0 p0 c0 {2,S}
-15 H u0 p0 c0 {2,S}
-16 H u0 p0 c0 {6,S}
+15 H u0 p0 c0 {4,S}
+16 H u0 p0 c0 {5,S}
 17 H u0 p0 c0 {7,S}
 18 H u0 p0 c0 {8,S}
 19 H u0 p0 c0 {9,S}
-20 H u0 p0 c0 {10,S}
+20 H u0 p0 c0 {6,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -462,30 +477,30 @@ entry(
     label = "Butylbenzene",
     molecule = 
 """
-1  C u0 p0 c0 {2,S} {11,S} {12,S} {13,S}
-2  C u0 p0 c0 {1,S} {3,S} {14,S} {15,S}
-3  C u0 p0 c0 {2,S} {4,S} {16,S} {17,S}
-4  C u0 p0 c0 {3,S} {5,S} {18,S} {19,S}
-5  C u0 p0 c0 {4,S} {6,D} {10,S}
-6  C u0 p0 c0 {5,D} {7,S} {20,S}
-7  C u0 p0 c0 {6,S} {8,D} {21,S}
-8  C u0 p0 c0 {7,D} {9,S} {22,S}
-9  C u0 p0 c0 {8,S} {10,D} {23,S}
-10 C u0 p0 c0 {5,S} {9,D} {24,S}
-11 H u0 p0 c0 {1,S}
-12 H u0 p0 c0 {1,S}
+1  C u0 p0 c0 {2,S} {3,S} {13,S} {14,S}
+2  C u0 p0 c0 {1,S} {4,S} {11,S} {12,S}
+3  C u0 p0 c0 {1,S} {5,S} {15,S} {16,S}
+4  C u0 p0 c0 {2,S} {17,S} {18,S} {19,S}
+5  C u0 p0 c0 {3,S} {6,B} {7,B}
+6  C u0 p0 c0 {5,B} {8,B} {20,S}
+7  C u0 p0 c0 {5,B} {10,B} {24,S}
+8  C u0 p0 c0 {6,B} {9,B} {21,S}
+9  C u0 p0 c0 {8,B} {10,B} {22,S}
+10 C u0 p0 c0 {7,B} {9,B} {23,S}
+11 H u0 p0 c0 {2,S}
+12 H u0 p0 c0 {2,S}
 13 H u0 p0 c0 {1,S}
-14 H u0 p0 c0 {2,S}
-15 H u0 p0 c0 {2,S}
+14 H u0 p0 c0 {1,S}
+15 H u0 p0 c0 {3,S}
 16 H u0 p0 c0 {3,S}
-17 H u0 p0 c0 {3,S}
+17 H u0 p0 c0 {4,S}
 18 H u0 p0 c0 {4,S}
 19 H u0 p0 c0 {4,S}
 20 H u0 p0 c0 {6,S}
-21 H u0 p0 c0 {7,S}
-22 H u0 p0 c0 {8,S}
-23 H u0 p0 c0 {9,S}
-24 H u0 p0 c0 {10,S}
+21 H u0 p0 c0 {8,S}
+22 H u0 p0 c0 {9,S}
+23 H u0 p0 c0 {10,S}
+24 H u0 p0 c0 {7,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -522,29 +537,29 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,S} {12,S} {13,S} {14,S}
-2  C u0 p0 c0 {1,S} {3,S} {15,S} {16,S}
-3  C u0 p0 c0 {2,S} {4,S} {17,S} {18,S}
-4  C u1 p0 c0 {3,S} {5,S} {6,S}
-5  H u0 p0 c0 {4,S}
-6  C u0 p0 c0 {4,S} {7,S} {11,D}
-7  C u0 p0 c0 {6,S} {8,D} {19,S}
-8  C u0 p0 c0 {7,D} {9,S} {20,S}
-9  C u0 p0 c0 {8,S} {10,D} {21,S}
-10 C u0 p0 c0 {9,D} {11,S} {22,S}
-11 C u0 p0 c0 {6,D} {10,S} {23,S}
+1  C u0 p0 c0 {2,S} {3,S} {11,S} {12,S}
+2  C u0 p0 c0 {1,S} {5,S} {13,S} {14,S}
+3  C u0 p0 c0 {1,S} {15,S} {16,S} {17,S}
+4  C u0 p0 c0 {5,S} {6,B} {7,B}
+5  C u1 p0 c0 {2,S} {4,S} {18,S}
+6  C u0 p0 c0 {4,B} {8,B} {19,S}
+7  C u0 p0 c0 {4,B} {10,B} {23,S}
+8  C u0 p0 c0 {6,B} {9,B} {20,S}
+9  C u0 p0 c0 {8,B} {10,B} {21,S}
+10 C u0 p0 c0 {7,B} {9,B} {22,S}
+11 H u0 p0 c0 {1,S}
 12 H u0 p0 c0 {1,S}
-13 H u0 p0 c0 {1,S}
-14 H u0 p0 c0 {1,S}
-15 H u0 p0 c0 {2,S}
-16 H u0 p0 c0 {2,S}
+13 H u0 p0 c0 {2,S}
+14 H u0 p0 c0 {2,S}
+15 H u0 p0 c0 {3,S}
+16 H u0 p0 c0 {3,S}
 17 H u0 p0 c0 {3,S}
-18 H u0 p0 c0 {3,S}
-19 H u0 p0 c0 {7,S}
+18 H u0 p0 c0 {5,S}
+19 H u0 p0 c0 {6,S}
 20 H u0 p0 c0 {8,S}
 21 H u0 p0 c0 {9,S}
 22 H u0 p0 c0 {10,S}
-23 H u0 p0 c0 {11,S}
+23 H u0 p0 c0 {7,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -580,33 +595,33 @@ entry(
     label = "Pentylbenzene",
     molecule = 
 """
-1  C u0 p0 c0 {2,S} {12,S} {13,S} {14,S}
-2  C u0 p0 c0 {1,S} {3,S} {15,S} {16,S}
-3  C u0 p0 c0 {2,S} {4,S} {17,S} {18,S}
-4  C u0 p0 c0 {3,S} {5,S} {19,S} {20,S}
-5  C u0 p0 c0 {4,S} {6,S} {21,S} {22,S}
-6  C u0 p0 c0 {5,S} {7,D} {11,S}
-7  C u0 p0 c0 {6,D} {8,S} {23,S}
-8  C u0 p0 c0 {7,S} {9,D} {24,S}
-9  C u0 p0 c0 {8,D} {10,S} {25,S}
-10 C u0 p0 c0 {9,S} {11,D} {26,S}
-11 C u0 p0 c0 {6,S} {10,D} {27,S}
-12 H u0 p0 c0 {1,S}
-13 H u0 p0 c0 {1,S}
+1  C u0 p0 c0 {2,S} {3,S} {14,S} {15,S}
+2  C u0 p0 c0 {1,S} {4,S} {16,S} {17,S}
+3  C u0 p0 c0 {1,S} {5,S} {12,S} {13,S}
+4  C u0 p0 c0 {2,S} {6,S} {18,S} {19,S}
+5  C u0 p0 c0 {3,S} {20,S} {21,S} {22,S}
+6  C u0 p0 c0 {4,S} {7,B} {8,B}
+7  C u0 p0 c0 {6,B} {9,B} {23,S}
+8  C u0 p0 c0 {6,B} {11,B} {27,S}
+9  C u0 p0 c0 {7,B} {10,B} {24,S}
+10 C u0 p0 c0 {9,B} {11,B} {25,S}
+11 C u0 p0 c0 {8,B} {10,B} {26,S}
+12 H u0 p0 c0 {3,S}
+13 H u0 p0 c0 {3,S}
 14 H u0 p0 c0 {1,S}
-15 H u0 p0 c0 {2,S}
+15 H u0 p0 c0 {1,S}
 16 H u0 p0 c0 {2,S}
-17 H u0 p0 c0 {3,S}
-18 H u0 p0 c0 {3,S}
+17 H u0 p0 c0 {2,S}
+18 H u0 p0 c0 {4,S}
 19 H u0 p0 c0 {4,S}
-20 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {5,S}
 21 H u0 p0 c0 {5,S}
 22 H u0 p0 c0 {5,S}
 23 H u0 p0 c0 {7,S}
-24 H u0 p0 c0 {8,S}
-25 H u0 p0 c0 {9,S}
-26 H u0 p0 c0 {10,S}
-27 H u0 p0 c0 {11,S}
+24 H u0 p0 c0 {9,S}
+25 H u0 p0 c0 {10,S}
+26 H u0 p0 c0 {11,S}
+27 H u0 p0 c0 {8,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -643,33 +658,32 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,S} {13,S} {14,S} {15,S}
-2  C u0 p0 c0 {1,S} {3,S} {16,S} {17,S}
-3  C u0 p0 c0 {2,S} {4,S} {18,S} {19,S}
-4  C u0 p0 c0 {3,S} {5,S} {20,S} {21,S}
-5  C u1 p0 c0 {4,S} {6,S} {7,S}
-6  H u0 p0 c0 {5,S}
-7  C u0 p0 c0 {5,S} {8,S} {12,D}
-8  C u0 p0 c0 {7,S} {9,D} {22,S}
-9  C u0 p0 c0 {8,D} {10,S} {23,S}
-10 C u0 p0 c0 {9,S} {11,D} {24,S}
-11 C u0 p0 c0 {10,D} {12,S} {25,S}
-12 C u0 p0 c0 {7,D} {11,S} {26,S}
-13 H u0 p0 c0 {1,S}
+1  C u0 p0 c0 {2,S} {3,S} {14,S} {15,S}
+2  C u0 p0 c0 {1,S} {4,S} {12,S} {13,S}
+3  C u0 p0 c0 {1,S} {6,S} {16,S} {17,S}
+4  C u0 p0 c0 {2,S} {18,S} {19,S} {20,S}
+5  C u0 p0 c0 {6,S} {7,B} {8,B}
+6  C u1 p0 c0 {3,S} {5,S} {21,S}
+7  C u0 p0 c0 {5,B} {9,B} {22,S}
+8  C u0 p0 c0 {5,B} {11,B} {26,S}
+9  C u0 p0 c0 {7,B} {10,B} {23,S}
+10 C u0 p0 c0 {9,B} {11,B} {24,S}
+11 C u0 p0 c0 {8,B} {10,B} {25,S}
+12 H u0 p0 c0 {2,S}
+13 H u0 p0 c0 {2,S}
 14 H u0 p0 c0 {1,S}
 15 H u0 p0 c0 {1,S}
-16 H u0 p0 c0 {2,S}
-17 H u0 p0 c0 {2,S}
-18 H u0 p0 c0 {3,S}
-19 H u0 p0 c0 {3,S}
+16 H u0 p0 c0 {3,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {4,S}
+19 H u0 p0 c0 {4,S}
 20 H u0 p0 c0 {4,S}
-21 H u0 p0 c0 {4,S}
-22 H u0 p0 c0 {8,S}
+21 H u0 p0 c0 {6,S}
+22 H u0 p0 c0 {7,S}
 23 H u0 p0 c0 {9,S}
 24 H u0 p0 c0 {10,S}
 25 H u0 p0 c0 {11,S}
-26 H u0 p0 c0 {12,S}
-
+26 H u0 p0 c0 {8,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -803,25 +817,25 @@ entry(
     label = "Indane",
     molecule = 
 """
-1  C u0 p0 c0 {2,S} {9,S} {10,S} {11,S}
-2  C u0 p0 c0 {1,S} {3,S} {12,S} {13,S}
-3  C u0 p0 c0 {2,S} {4,D} {8,S}
-4  C u0 p0 c0 {3,D} {5,S} {14,S}
-5  C u0 p0 c0 {4,S} {6,D} {15,S}
-6  C u0 p0 c0 {5,D} {7,S} {16,S}
-7  C u0 p0 c0 {6,S} {8,D} {17,S}
-8  C u0 p0 c0 {3,S} {7,D} {9,S}
-9  C u0 p0 c0 {1,S} {8,S} {18,S} {19,S}
+1  C u0 p0 c0 {2,S} {3,S} {10,S} {11,S}
+2  C u0 p0 c0 {1,S} {4,S} {12,S} {13,S}
+3  C u0 p0 c0 {1,S} {5,S} {14,S} {15,S}
+4  C u0 p0 c0 {2,S} {5,B} {6,B}
+5  C u0 p0 c0 {3,S} {4,B} {7,B}
+6  C u0 p0 c0 {4,B} {8,B} {16,S}
+7  C u0 p0 c0 {5,B} {9,B} {19,S}
+8  C u0 p0 c0 {6,B} {9,B} {17,S}
+9  C u0 p0 c0 {7,B} {8,B} {18,S}
 10 H u0 p0 c0 {1,S}
 11 H u0 p0 c0 {1,S}
 12 H u0 p0 c0 {2,S}
 13 H u0 p0 c0 {2,S}
-14 H u0 p0 c0 {4,S}
-15 H u0 p0 c0 {5,S}
+14 H u0 p0 c0 {3,S}
+15 H u0 p0 c0 {3,S}
 16 H u0 p0 c0 {6,S}
-17 H u0 p0 c0 {7,S}
+17 H u0 p0 c0 {8,S}
 18 H u0 p0 c0 {9,S}
-19 H u0 p0 c0 {9,S}
+19 H u0 p0 c0 {7,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -858,26 +872,26 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,D} {10,S} {11,S}
-2  C u0 p0 c0 {1,D} {3,S} {12,S}
-3  C u1 p0 c0 {2,S} {4,S} {5,S}
-4  H u0 p0 c0 {3,S}
-5  C u0 p0 c0 {3,S} {6,S} {9,S} {13,S}
-6  C u0 p0 c0 {5,S} {7,S} {14,S} {15,S}
-7  C u0 p0 c0 {6,S} {8,S} {16,S} {17,S}
-8  C u0 p0 c0 {7,S} {9,S} {18,S} {19,S}
-9  C u0 p0 c0 {5,S} {8,S} {10,D}
-10 C u0 p0 c0 {1,S} {9,D} {20,S}
-11 H u0 p0 c0 {1,S}
+1  C u0 p0 c0 {2,S} {5,S} {6,S} {10,S}
+2  C u0 p0 c0 {1,S} {3,S} {11,S} {12,S}
+3  C u0 p0 c0 {2,S} {4,S} {13,S} {14,S}
+4  C u0 p0 c0 {3,S} {5,S} {15,S} {16,S}
+5  C u0 p0 c0 {1,S} {4,S} {7,D}
+6  C u1 p0 c0 {1,S} {8,S} {17,S}
+7  C u0 p0 c0 {5,D} {9,S} {20,S}
+8  C u0 p0 c0 {6,S} {9,D} {19,S}
+9  C u0 p0 c0 {7,S} {8,D} {18,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {2,S}
 12 H u0 p0 c0 {2,S}
-13 H u0 p0 c0 {5,S}
-14 H u0 p0 c0 {6,S}
-15 H u0 p0 c0 {6,S}
-16 H u0 p0 c0 {7,S}
-17 H u0 p0 c0 {7,S}
-18 H u0 p0 c0 {8,S}
+13 H u0 p0 c0 {3,S}
+14 H u0 p0 c0 {3,S}
+15 H u0 p0 c0 {4,S}
+16 H u0 p0 c0 {4,S}
+17 H u0 p0 c0 {6,S}
+18 H u0 p0 c0 {9,S}
 19 H u0 p0 c0 {8,S}
-20 H u0 p0 c0 {10,S}
+20 H u0 p0 c0 {7,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -913,34 +927,34 @@ entry(
     label = "Ethyltetralin",
     molecule = 
 """
-1  C u0 p0 c0 {2,S} {13,S} {14,S} {15,S}
-2  C u0 p0 c0 {1,S} {3,S} {16,S} {17,S}
-3  C u0 p0 c0 {2,S} {4,S} {12,S} {18,S}
-4  C u0 p0 c0 {3,S} {5,S} {19,S} {20,S}
-5  C u0 p0 c0 {4,S} {6,S} {21,S} {22,S}
-6  C u0 p0 c0 {5,S} {7,S} {23,S} {24,S}
-7  C u0 p0 c0 {6,S} {8,D} {12,S}
-8  C u0 p0 c0 {7,D} {9,S} {25,S}
-9  C u0 p0 c0 {8,S} {10,D} {26,S}
-10 C u0 p0 c0 {9,D} {11,S} {27,S}
-11 C u0 p0 c0 {10,S} {12,D} {28,S}
-12 C u0 p0 c0 {3,S} {7,S} {11,D}
+1  C u0 p0 c0 {2,S} {3,S} {7,S} {13,S}
+2  C u0 p0 c0 {1,S} {4,S} {16,S} {17,S}
+3  C u0 p0 c0 {1,S} {6,S} {14,S} {15,S}
+4  C u0 p0 c0 {2,S} {5,S} {18,S} {19,S}
+5  C u0 p0 c0 {4,S} {8,S} {20,S} {21,S}
+6  C u0 p0 c0 {3,S} {22,S} {23,S} {24,S}
+7  C u0 p0 c0 {1,S} {8,B} {10,B}
+8  C u0 p0 c0 {5,S} {7,B} {9,B}
+9  C u0 p0 c0 {8,B} {11,B} {25,S}
+10 C u0 p0 c0 {7,B} {12,B} {28,S}
+11 C u0 p0 c0 {9,B} {12,B} {26,S}
+12 C u0 p0 c0 {10,B} {11,B} {27,S}
 13 H u0 p0 c0 {1,S}
-14 H u0 p0 c0 {1,S}
-15 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {3,S}
+15 H u0 p0 c0 {3,S}
 16 H u0 p0 c0 {2,S}
 17 H u0 p0 c0 {2,S}
-18 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {4,S}
 19 H u0 p0 c0 {4,S}
-20 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {5,S}
 21 H u0 p0 c0 {5,S}
-22 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {6,S}
 23 H u0 p0 c0 {6,S}
 24 H u0 p0 c0 {6,S}
-25 H u0 p0 c0 {8,S}
-26 H u0 p0 c0 {9,S}
-27 H u0 p0 c0 {10,S}
-28 H u0 p0 c0 {11,S}
+25 H u0 p0 c0 {9,S}
+26 H u0 p0 c0 {11,S}
+27 H u0 p0 c0 {12,S}
+28 H u0 p0 c0 {10,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -977,35 +991,35 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,S} {14,S} {15,S} {16,S}
-2  C u0 p0 c0 {1,S} {3,S} {17,S} {18,S}
-3  C u0 p0 c0 {2,S} {4,S} {13,S} {19,S}
-4  C u0 p0 c0 {3,S} {5,S} {20,S} {21,S}
-5  C u0 p0 c0 {4,S} {6,S} {22,S} {23,S}
-6  C u0 p0 c0 {5,S} {7,S} {24,S} {25,S}
-7  C u0 p0 c0 {6,S} {8,D} {13,S}
-8  C u0 p0 c0 {7,D} {9,S} {26,S}
-9  C u0 p0 c0 {8,S} {10,D} {27,S}
-10 C u0 p0 c0 {9,D} {11,S} {28,S}
-11 C u1 p0 c0 {10,S} {12,S} {13,S}
-12 H u0 p0 c0 {11,S}
-13 C u0 p0 c0 {3,S} {7,S} {11,S} {29,S}
-14 H u0 p0 c0 {1,S}
-15 H u0 p0 c0 {1,S}
-16 H u0 p0 c0 {1,S}
-17 H u0 p0 c0 {2,S}
-18 H u0 p0 c0 {2,S}
-19 H u0 p0 c0 {3,S}
-20 H u0 p0 c0 {4,S}
-21 H u0 p0 c0 {4,S}
-22 H u0 p0 c0 {5,S}
-23 H u0 p0 c0 {5,S}
-24 H u0 p0 c0 {6,S}
-25 H u0 p0 c0 {6,S}
-26 H u0 p0 c0 {8,S}
-27 H u0 p0 c0 {9,S}
-28 H u0 p0 c0 {10,S}
-29 H u0 p0 c0 {13,S}
+1  C u0 p0 c0 {2,S} {3,S} {4,S} {13,S}
+2  C u0 p0 c0 {1,S} {8,S} {9,S} {14,S}
+3  C u0 p0 c0 {1,S} {5,S} {17,S} {18,S}
+4  C u0 p0 c0 {1,S} {7,S} {15,S} {16,S}
+5  C u0 p0 c0 {3,S} {6,S} {19,S} {20,S}
+6  C u0 p0 c0 {5,S} {8,S} {21,S} {22,S}
+7  C u0 p0 c0 {4,S} {23,S} {24,S} {25,S}
+8  C u0 p0 c0 {2,S} {6,S} {10,D}
+9  C u1 p0 c0 {2,S} {11,S} {26,S}
+10 C u0 p0 c0 {8,D} {12,S} {27,S}
+11 C u0 p0 c0 {9,S} {12,D} {29,S}
+12 C u0 p0 c0 {10,S} {11,D} {28,S}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {2,S}
+15 H u0 p0 c0 {4,S}
+16 H u0 p0 c0 {4,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {3,S}
+19 H u0 p0 c0 {5,S}
+20 H u0 p0 c0 {5,S}
+21 H u0 p0 c0 {6,S}
+22 H u0 p0 c0 {6,S}
+23 H u0 p0 c0 {7,S}
+24 H u0 p0 c0 {7,S}
+25 H u0 p0 c0 {7,S}
+26 H u0 p0 c0 {9,S}
+27 H u0 p0 c0 {10,S}
+28 H u0 p0 c0 {12,S}
+29 H u0 p0 c0 {11,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -1094,36 +1108,35 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,S} {14,S} {15,S} {16,S}
-2  C u0 p0 c0 {1,S} {3,S} {17,S} {18,S}
-3  C u0 p0 c0 {2,S} {4,S} {19,S} {20,S}
-4  C u0 p0 c0 {3,S} {5,S} {21,S} {22,S}
-5  C u1 p0 c0 {4,S} {6,S} {7,S}
-6  H u0 p0 c0 {5,S}
-7  C u0 p0 c0 {5,S} {8,S} {23,S} {24,S}
-8  C u0 p0 c0 {7,S} {9,S} {13,D}
-9  C u0 p0 c0 {8,S} {10,D} {25,S}
-10 C u0 p0 c0 {9,D} {11,S} {26,S}
-11 C u0 p0 c0 {10,S} {12,D} {27,S}
-12 C u0 p0 c0 {11,D} {13,S} {28,S}
-13 C u0 p0 c0 {8,D} {12,S} {29,S}
-14 H u0 p0 c0 {1,S}
+1  C u0 p0 c0 {2,S} {3,S} {15,S} {16,S}
+2  C u0 p0 c0 {1,S} {5,S} {13,S} {14,S}
+3  C u0 p0 c0 {1,S} {7,S} {17,S} {18,S}
+4  C u0 p0 c0 {6,S} {7,S} {19,S} {20,S}
+5  C u0 p0 c0 {2,S} {21,S} {22,S} {23,S}
+6  C u0 p0 c0 {4,S} {8,B} {9,B}
+7  C u1 p0 c0 {3,S} {4,S} {24,S}
+8  C u0 p0 c0 {6,B} {10,B} {25,S}
+9  C u0 p0 c0 {6,B} {12,B} {29,S}
+10 C u0 p0 c0 {8,B} {11,B} {26,S}
+11 C u0 p0 c0 {10,B} {12,B} {27,S}
+12 C u0 p0 c0 {9,B} {11,B} {28,S}
+13 H u0 p0 c0 {2,S}
+14 H u0 p0 c0 {2,S}
 15 H u0 p0 c0 {1,S}
 16 H u0 p0 c0 {1,S}
-17 H u0 p0 c0 {2,S}
-18 H u0 p0 c0 {2,S}
-19 H u0 p0 c0 {3,S}
-20 H u0 p0 c0 {3,S}
-21 H u0 p0 c0 {4,S}
-22 H u0 p0 c0 {4,S}
-23 H u0 p0 c0 {7,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {3,S}
+19 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {4,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {5,S}
+23 H u0 p0 c0 {5,S}
 24 H u0 p0 c0 {7,S}
-25 H u0 p0 c0 {9,S}
+25 H u0 p0 c0 {8,S}
 26 H u0 p0 c0 {10,S}
 27 H u0 p0 c0 {11,S}
 28 H u0 p0 c0 {12,S}
-29 H u0 p0 c0 {13,S}
-
+29 H u0 p0 c0 {9,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -1160,36 +1173,35 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,S} {14,S} {15,S} {16,S}
-2  C u0 p0 c0 {1,S} {3,S} {17,S} {18,S}
-3  C u0 p0 c0 {2,S} {4,S} {19,S} {20,S}
-4  C u1 p0 c0 {3,S} {5,S} {6,S}
-5  H u0 p0 c0 {4,S}
-6  C u0 p0 c0 {4,S} {7,S} {21,S} {22,S}
-7  C u0 p0 c0 {6,S} {8,S} {23,S} {24,S}
-8  C u0 p0 c0 {7,S} {9,S} {13,D}
-9  C u0 p0 c0 {8,S} {10,D} {25,S}
-10 C u0 p0 c0 {9,D} {11,S} {26,S}
-11 C u0 p0 c0 {10,S} {12,D} {27,S}
-12 C u0 p0 c0 {11,D} {13,S} {28,S}
-13 C u0 p0 c0 {8,D} {12,S} {29,S}
+1  C u0 p0 c0 {2,S} {5,S} {13,S} {14,S}
+2  C u0 p0 c0 {1,S} {7,S} {15,S} {16,S}
+3  C u0 p0 c0 {4,S} {6,S} {19,S} {20,S}
+4  C u0 p0 c0 {3,S} {7,S} {17,S} {18,S}
+5  C u0 p0 c0 {1,S} {21,S} {22,S} {23,S}
+6  C u0 p0 c0 {3,S} {8,B} {9,B}
+7  C u1 p0 c0 {2,S} {4,S} {24,S}
+8  C u0 p0 c0 {6,B} {10,B} {25,S}
+9  C u0 p0 c0 {6,B} {12,B} {29,S}
+10 C u0 p0 c0 {8,B} {11,B} {26,S}
+11 C u0 p0 c0 {10,B} {12,B} {27,S}
+12 C u0 p0 c0 {9,B} {11,B} {28,S}
+13 H u0 p0 c0 {1,S}
 14 H u0 p0 c0 {1,S}
-15 H u0 p0 c0 {1,S}
-16 H u0 p0 c0 {1,S}
-17 H u0 p0 c0 {2,S}
-18 H u0 p0 c0 {2,S}
+15 H u0 p0 c0 {2,S}
+16 H u0 p0 c0 {2,S}
+17 H u0 p0 c0 {4,S}
+18 H u0 p0 c0 {4,S}
 19 H u0 p0 c0 {3,S}
 20 H u0 p0 c0 {3,S}
-21 H u0 p0 c0 {6,S}
-22 H u0 p0 c0 {6,S}
-23 H u0 p0 c0 {7,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {5,S}
+23 H u0 p0 c0 {5,S}
 24 H u0 p0 c0 {7,S}
-25 H u0 p0 c0 {9,S}
+25 H u0 p0 c0 {8,S}
 26 H u0 p0 c0 {10,S}
 27 H u0 p0 c0 {11,S}
 28 H u0 p0 c0 {12,S}
-29 H u0 p0 c0 {13,S}
-
+29 H u0 p0 c0 {9,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -1226,36 +1238,35 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,S} {14,S} {15,S} {16,S}
-2  C u0 p0 c0 {1,S} {3,S} {17,S} {18,S}
-3  C u1 p0 c0 {2,S} {4,S} {5,S}
-4  H u0 p0 c0 {3,S}
-5  C u0 p0 c0 {3,S} {6,S} {19,S} {20,S}
-6  C u0 p0 c0 {5,S} {7,S} {21,S} {22,S}
-7  C u0 p0 c0 {6,S} {8,S} {23,S} {24,S}
-8  C u0 p0 c0 {7,S} {9,S} {13,D}
-9  C u0 p0 c0 {8,S} {10,D} {25,S}
-10 C u0 p0 c0 {9,D} {11,S} {26,S}
-11 C u0 p0 c0 {10,S} {12,D} {27,S}
-12 C u0 p0 c0 {11,D} {13,S} {28,S}
-13 C u0 p0 c0 {8,D} {12,S} {29,S}
+1  C u0 p0 c0 {2,S} {3,S} {13,S} {14,S}
+2  C u0 p0 c0 {1,S} {6,S} {19,S} {20,S}
+3  C u0 p0 c0 {1,S} {7,S} {17,S} {18,S}
+4  C u0 p0 c0 {5,S} {7,S} {15,S} {16,S}
+5  C u0 p0 c0 {4,S} {21,S} {22,S} {23,S}
+6  C u0 p0 c0 {2,S} {8,B} {9,B}
+7  C u1 p0 c0 {3,S} {4,S} {24,S}
+8  C u0 p0 c0 {6,B} {10,B} {25,S}
+9  C u0 p0 c0 {6,B} {12,B} {29,S}
+10 C u0 p0 c0 {8,B} {11,B} {26,S}
+11 C u0 p0 c0 {10,B} {12,B} {27,S}
+12 C u0 p0 c0 {9,B} {11,B} {28,S}
+13 H u0 p0 c0 {1,S}
 14 H u0 p0 c0 {1,S}
-15 H u0 p0 c0 {1,S}
-16 H u0 p0 c0 {1,S}
-17 H u0 p0 c0 {2,S}
-18 H u0 p0 c0 {2,S}
-19 H u0 p0 c0 {5,S}
-20 H u0 p0 c0 {5,S}
-21 H u0 p0 c0 {6,S}
-22 H u0 p0 c0 {6,S}
-23 H u0 p0 c0 {7,S}
+15 H u0 p0 c0 {4,S}
+16 H u0 p0 c0 {4,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {3,S}
+19 H u0 p0 c0 {2,S}
+20 H u0 p0 c0 {2,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {5,S}
+23 H u0 p0 c0 {5,S}
 24 H u0 p0 c0 {7,S}
-25 H u0 p0 c0 {9,S}
+25 H u0 p0 c0 {8,S}
 26 H u0 p0 c0 {10,S}
 27 H u0 p0 c0 {11,S}
 28 H u0 p0 c0 {12,S}
-29 H u0 p0 c0 {13,S}
-
+29 H u0 p0 c0 {9,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -1292,36 +1303,35 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u0 p0 c0 {2,S} {14,S} {15,S} {16,S}
-2  C u1 p0 c0 {1,S} {3,S} {4,S}
-3  H u0 p0 c0 {2,S}
-4  C u0 p0 c0 {2,S} {5,S} {17,S} {18,S}
-5  C u0 p0 c0 {4,S} {6,S} {19,S} {20,S}
-6  C u0 p0 c0 {5,S} {7,S} {21,S} {22,S}
-7  C u0 p0 c0 {6,S} {8,S} {23,S} {24,S}
-8  C u0 p0 c0 {7,S} {9,S} {13,D}
-9  C u0 p0 c0 {8,S} {10,D} {25,S}
-10 C u0 p0 c0 {9,D} {11,S} {26,S}
-11 C u0 p0 c0 {10,S} {12,D} {27,S}
-12 C u0 p0 c0 {11,D} {13,S} {28,S}
-13 C u0 p0 c0 {8,D} {12,S} {29,S}
+1  C u0 p0 c0 {2,S} {4,S} {13,S} {14,S}
+2  C u0 p0 c0 {1,S} {3,S} {15,S} {16,S}
+3  C u0 p0 c0 {2,S} {6,S} {19,S} {20,S}
+4  C u0 p0 c0 {1,S} {7,S} {17,S} {18,S}
+5  C u0 p0 c0 {7,S} {21,S} {22,S} {23,S}
+6  C u0 p0 c0 {3,S} {8,B} {9,B}
+7  C u1 p0 c0 {4,S} {5,S} {24,S}
+8  C u0 p0 c0 {6,B} {10,B} {25,S}
+9  C u0 p0 c0 {6,B} {12,B} {29,S}
+10 C u0 p0 c0 {8,B} {11,B} {26,S}
+11 C u0 p0 c0 {10,B} {12,B} {27,S}
+12 C u0 p0 c0 {9,B} {11,B} {28,S}
+13 H u0 p0 c0 {1,S}
 14 H u0 p0 c0 {1,S}
-15 H u0 p0 c0 {1,S}
-16 H u0 p0 c0 {1,S}
+15 H u0 p0 c0 {2,S}
+16 H u0 p0 c0 {2,S}
 17 H u0 p0 c0 {4,S}
 18 H u0 p0 c0 {4,S}
-19 H u0 p0 c0 {5,S}
-20 H u0 p0 c0 {5,S}
-21 H u0 p0 c0 {6,S}
-22 H u0 p0 c0 {6,S}
-23 H u0 p0 c0 {7,S}
+19 H u0 p0 c0 {3,S}
+20 H u0 p0 c0 {3,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {5,S}
+23 H u0 p0 c0 {5,S}
 24 H u0 p0 c0 {7,S}
-25 H u0 p0 c0 {9,S}
+25 H u0 p0 c0 {8,S}
 26 H u0 p0 c0 {10,S}
 27 H u0 p0 c0 {11,S}
 28 H u0 p0 c0 {12,S}
-29 H u0 p0 c0 {13,S}
-
+29 H u0 p0 c0 {9,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -1358,36 +1368,35 @@ entry(
     molecule = 
 """
 multiplicity 2
-1  C u1 p0 c0 {2,S} {3,S} {4,S}
-2  H u0 p0 c0 {1,S}
-3  H u0 p0 c0 {1,S}
-4  C u0 p0 c0 {1,S} {5,S} {15,S} {16,S}
-5  C u0 p0 c0 {4,S} {6,S} {17,S} {18,S}
-6  C u0 p0 c0 {5,S} {7,S} {19,S} {20,S}
-7  C u0 p0 c0 {6,S} {8,S} {21,S} {22,S}
-8  C u0 p0 c0 {7,S} {9,S} {23,S} {24,S}
-9  C u0 p0 c0 {8,S} {10,S} {14,D}
-10 C u0 p0 c0 {9,S} {11,D} {25,S}
-11 C u0 p0 c0 {10,D} {12,S} {26,S}
-12 C u0 p0 c0 {11,S} {13,D} {27,S}
-13 C u0 p0 c0 {12,D} {14,S} {28,S}
-14 C u0 p0 c0 {9,D} {13,S} {29,S}
-15 H u0 p0 c0 {4,S}
-16 H u0 p0 c0 {4,S}
-17 H u0 p0 c0 {5,S}
-18 H u0 p0 c0 {5,S}
-19 H u0 p0 c0 {6,S}
-20 H u0 p0 c0 {6,S}
-21 H u0 p0 c0 {7,S}
-22 H u0 p0 c0 {7,S}
-23 H u0 p0 c0 {8,S}
-24 H u0 p0 c0 {8,S}
+1  C u0 p0 c0 {2,S} {3,S} {15,S} {16,S}
+2  C u0 p0 c0 {1,S} {5,S} {13,S} {14,S}
+3  C u0 p0 c0 {1,S} {4,S} {17,S} {18,S}
+4  C u0 p0 c0 {3,S} {6,S} {21,S} {22,S}
+5  C u0 p0 c0 {2,S} {12,S} {19,S} {20,S}
+6  C u0 p0 c0 {4,S} {7,B} {8,B}
+7  C u0 p0 c0 {6,B} {9,B} {23,S}
+8  C u0 p0 c0 {6,B} {11,B} {27,S}
+9  C u0 p0 c0 {7,B} {10,B} {24,S}
+10 C u0 p0 c0 {9,B} {11,B} {25,S}
+11 C u0 p0 c0 {8,B} {10,B} {26,S}
+12 C u1 p0 c0 {5,S} {28,S} {29,S}
+13 H u0 p0 c0 {2,S}
+14 H u0 p0 c0 {2,S}
+15 H u0 p0 c0 {1,S}
+16 H u0 p0 c0 {1,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {3,S}
+19 H u0 p0 c0 {5,S}
+20 H u0 p0 c0 {5,S}
+21 H u0 p0 c0 {4,S}
+22 H u0 p0 c0 {4,S}
+23 H u0 p0 c0 {7,S}
+24 H u0 p0 c0 {9,S}
 25 H u0 p0 c0 {10,S}
 26 H u0 p0 c0 {11,S}
-27 H u0 p0 c0 {12,S}
-28 H u0 p0 c0 {13,S}
-29 H u0 p0 c0 {14,S}
-
+27 H u0 p0 c0 {8,S}
+28 H u0 p0 c0 {12,S}
+29 H u0 p0 c0 {12,S}
 """,
     thermo = NASA(
         polynomials = [
@@ -1440,7 +1449,6 @@ multiplicity 2
 14 H u0 p0 c0 {7,S}
 15 H u0 p0 c0 {8,S}
 16 H u0 p0 c0 {8,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -1493,7 +1501,6 @@ multiplicity 2
 14 H u0 p0 c0 {4,S}
 15 H u0 p0 c0 {5,S}
 16 H u0 p0 c0 {6,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -1547,7 +1554,6 @@ multiplicity 2
 14 H u0 p0 c0 {6,S}
 15 H u0 p0 c0 {7,S}
 16 H u0 p0 c0 {8,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -1600,7 +1606,6 @@ multiplicity 2
 14 H u0 p0 c0 {4,S}
 15 H u0 p0 c0 {7,S}
 16 H u0 p0 c0 {8,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -1668,7 +1673,6 @@ multiplicity 2
 29 H u0 p0 c0 {12,S}
 30 H u0 p0 c0 {13,S}
 31 H u0 p0 c0 {13,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -1736,7 +1740,6 @@ multiplicity 2
 29 H u0 p0 c0 {9,S}
 30 H u0 p0 c0 {10,S}
 31 H u0 p0 c0 {11,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -1805,7 +1808,6 @@ multiplicity 2
 29 H u0 p0 c0 {10,S}
 30 H u0 p0 c0 {10,S}
 31 H u0 p0 c0 {13,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -1874,7 +1876,6 @@ multiplicity 2
 29 H u0 p0 c0 {9,S}
 30 H u0 p0 c0 {12,S}
 31 H u0 p0 c0 {13,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -1905,3 +1906,347 @@ Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/HxBPlusHSub
 )
 
 
+entry(
+    index = 33,
+    label = "s2_5_6_diene_0_2",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,D} {9,S} {10,S}
+2  C u0 p0 c0 {1,D} {3,S} {11,S}
+3  C u0 p0 c0 {2,S} {4,S} {12,S} {13,S}
+4  C u0 p0 c0 {3,S} {5,S} {8,S} {14,S}
+5  C u0 p0 c0 {4,S} {6,S} {15,S} {16,S}
+6  C u0 p0 c0 {5,S} {7,S} {17,S} {18,S}
+7  C u0 p0 c0 {6,S} {8,S} {19,S} {20,S}
+8  C u0 p0 c0 {4,S} {7,S} {9,D}
+9  C u0 p0 c0 {1,S} {8,D} {21,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {2,S}
+12 H u0 p0 c0 {3,S}
+13 H u0 p0 c0 {3,S}
+14 H u0 p0 c0 {4,S}
+15 H u0 p0 c0 {5,S}
+16 H u0 p0 c0 {5,S}
+17 H u0 p0 c0 {6,S}
+18 H u0 p0 c0 {6,S}
+19 H u0 p0 c0 {7,S}
+20 H u0 p0 c0 {7,S}
+21 H u0 p0 c0 {9,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.99757, -0.00147028, 0.00025873, -4.32573e-07, 2.30106e-10, 8272.24, 12.3533],
+                Tmin = (10, 'K'),
+                Tmax = (570.669, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-5.74266, 0.0928599, -5.77088e-05, 1.71109e-08, -1.94559e-12, 8959.63, 50.163],
+                Tmin = (570.669, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (68.7467, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (507.183, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for C1=CCC2CCCC2=C1 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+""",
+)
+
+
+entry(
+    index = 34,
+    label = "s2_5_6_diene_0_3",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,S} {9,D} {10,S}
+2  C u0 p0 c0 {1,S} {3,S} {11,S} {12,S}
+3  C u0 p0 c0 {2,S} {4,D} {13,S}
+4  C u0 p0 c0 {3,D} {5,S} {8,S}
+5  C u0 p0 c0 {4,S} {6,S} {14,S} {15,S}
+6  C u0 p0 c0 {5,S} {7,S} {16,S} {17,S}
+7  C u0 p0 c0 {6,S} {8,S} {18,S} {19,S}
+8  C u0 p0 c0 {4,S} {7,S} {9,S} {20,S}
+9  C u0 p0 c0 {1,D} {8,S} {21,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {2,S}
+12 H u0 p0 c0 {2,S}
+13 H u0 p0 c0 {3,S}
+14 H u0 p0 c0 {5,S}
+15 H u0 p0 c0 {5,S}
+16 H u0 p0 c0 {6,S}
+17 H u0 p0 c0 {6,S}
+18 H u0 p0 c0 {7,S}
+19 H u0 p0 c0 {7,S}
+20 H u0 p0 c0 {8,S}
+21 H u0 p0 c0 {9,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.97668, 0.000259178, 0.0002529, -4.28765e-07, 2.31955e-10, 8708.65, 12.7211],
+                Tmin = (10, 'K'),
+                Tmax = (552.288, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-5.85547, 0.0930705, -5.78411e-05, 1.71477e-08, -1.94953e-12, 9465.25, 51.3358],
+                Tmin = (552.288, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (72.3762, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (507.183, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for C=1CC=C2CCCC2C1 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+""",
+)
+
+
+entry(
+    index = 35,
+    label = "s2_5_6_diene_1_3",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,D} {9,S} {10,S}
+2  C u0 p0 c0 {1,D} {3,S} {11,S}
+3  C u0 p0 c0 {2,S} {4,S} {7,S} {12,S}
+4  C u0 p0 c0 {3,S} {5,S} {13,S} {14,S}
+5  C u0 p0 c0 {4,S} {6,S} {15,S} {16,S}
+6  C u0 p0 c0 {5,S} {7,S} {17,S} {18,S}
+7  C u0 p0 c0 {3,S} {6,S} {8,S} {19,S}
+8  C u0 p0 c0 {7,S} {9,D} {20,S}
+9  C u0 p0 c0 {1,S} {8,D} {21,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {2,S}
+12 H u0 p0 c0 {3,S}
+13 H u0 p0 c0 {4,S}
+14 H u0 p0 c0 {4,S}
+15 H u0 p0 c0 {5,S}
+16 H u0 p0 c0 {5,S}
+17 H u0 p0 c0 {6,S}
+18 H u0 p0 c0 {6,S}
+19 H u0 p0 c0 {7,S}
+20 H u0 p0 c0 {8,S}
+21 H u0 p0 c0 {9,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [4.00318, -0.00185491, 0.000256376, -4.22095e-07, 2.20676e-10, 8959.32, 13.1756],
+                Tmin = (10, 'K'),
+                Tmax = (582.446, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-5.94416, 0.0933727, -5.81793e-05, 1.72781e-08, -1.96553e-12, 9661.57, 51.8701],
+                Tmin = (582.446, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (74.4602, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (507.183, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for C1=CC2CCCC2C=C1 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+""",
+)
+
+
+entry(
+    index = 36,
+    label = "s2_6_6_diene_0_2",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,D} {10,S} {11,S}
+2  C u0 p0 c0 {1,D} {3,S} {12,S}
+3  C u0 p0 c0 {2,S} {4,S} {13,S} {14,S}
+4  C u0 p0 c0 {3,S} {5,S} {9,S} {15,S}
+5  C u0 p0 c0 {4,S} {6,S} {16,S} {17,S}
+6  C u0 p0 c0 {5,S} {7,S} {18,S} {19,S}
+7  C u0 p0 c0 {6,S} {8,S} {20,S} {21,S}
+8  C u0 p0 c0 {7,S} {9,S} {22,S} {23,S}
+9  C u0 p0 c0 {4,S} {8,S} {10,D}
+10 C u0 p0 c0 {1,S} {9,D} {24,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {2,S}
+13 H u0 p0 c0 {3,S}
+14 H u0 p0 c0 {3,S}
+15 H u0 p0 c0 {4,S}
+16 H u0 p0 c0 {5,S}
+17 H u0 p0 c0 {5,S}
+18 H u0 p0 c0 {6,S}
+19 H u0 p0 c0 {6,S}
+20 H u0 p0 c0 {7,S}
+21 H u0 p0 c0 {7,S}
+22 H u0 p0 c0 {8,S}
+23 H u0 p0 c0 {8,S}
+24 H u0 p0 c0 {10,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.89996, 0.00597168, 0.000268757, -4.68371e-07, 2.63151e-10, 2865.77, 12.7943],
+                Tmin = (10, 'K'),
+                Tmax = (460.501, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-8.0572, 0.109805, -6.93645e-05, 2.09875e-08, -2.43984e-12, 3967.34, 61.212],
+                Tmin = (460.501, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (23.7851, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (582.013, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for C1=CCC2CCCCC2=C1 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+""",
+)
+
+
+entry(
+    index = 37,
+    label = "s2_6_6_diene_0_3",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,S} {10,D} {11,S}
+2  C u0 p0 c0 {1,S} {3,S} {12,S} {13,S}
+3  C u0 p0 c0 {2,S} {4,D} {14,S}
+4  C u0 p0 c0 {3,D} {5,S} {9,S}
+5  C u0 p0 c0 {4,S} {6,S} {15,S} {16,S}
+6  C u0 p0 c0 {5,S} {7,S} {17,S} {18,S}
+7  C u0 p0 c0 {6,S} {8,S} {19,S} {20,S}
+8  C u0 p0 c0 {7,S} {9,S} {21,S} {22,S}
+9  C u0 p0 c0 {4,S} {8,S} {10,S} {23,S}
+10 C u0 p0 c0 {1,D} {9,S} {24,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {2,S}
+13 H u0 p0 c0 {2,S}
+14 H u0 p0 c0 {3,S}
+15 H u0 p0 c0 {5,S}
+16 H u0 p0 c0 {5,S}
+17 H u0 p0 c0 {6,S}
+18 H u0 p0 c0 {6,S}
+19 H u0 p0 c0 {7,S}
+20 H u0 p0 c0 {7,S}
+21 H u0 p0 c0 {8,S}
+22 H u0 p0 c0 {8,S}
+23 H u0 p0 c0 {9,S}
+24 H u0 p0 c0 {10,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.89946, 0.00597198, 0.000266684, -4.61897e-07, 2.57724e-10, 2508.5, 12.6651],
+                Tmin = (10, 'K'),
+                Tmax = (463.874, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-8.16301, 0.109952, -6.94353e-05, 2.10011e-08, -2.4406e-12, 3627.97, 61.5979],
+                Tmin = (463.874, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (20.8133, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (582.013, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for C=1CC=C2CCCCC2C1 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+""",
+)
+
+
+entry(
+    index = 38,
+    label = "s2_6_6_diene_1_3",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,S} {10,D} {11,S}
+2  C u0 p0 c0 {1,S} {3,D} {12,S}
+3  C u0 p0 c0 {2,D} {4,S} {13,S}
+4  C u0 p0 c0 {3,S} {5,S} {9,S} {14,S}
+5  C u0 p0 c0 {4,S} {6,S} {15,S} {16,S}
+6  C u0 p0 c0 {5,S} {7,S} {17,S} {18,S}
+7  C u0 p0 c0 {6,S} {8,S} {19,S} {20,S}
+8  C u0 p0 c0 {7,S} {9,S} {21,S} {22,S}
+9  C u0 p0 c0 {4,S} {8,S} {10,S} {23,S}
+10 C u0 p0 c0 {1,D} {9,S} {24,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {2,S}
+13 H u0 p0 c0 {3,S}
+14 H u0 p0 c0 {4,S}
+15 H u0 p0 c0 {5,S}
+16 H u0 p0 c0 {5,S}
+17 H u0 p0 c0 {6,S}
+18 H u0 p0 c0 {6,S}
+19 H u0 p0 c0 {7,S}
+20 H u0 p0 c0 {7,S}
+21 H u0 p0 c0 {8,S}
+22 H u0 p0 c0 {8,S}
+23 H u0 p0 c0 {9,S}
+24 H u0 p0 c0 {10,S}
+
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.99014, -0.00119968, 0.000302494, -5.14955e-07, 2.79612e-10, 3294.92, 12.6133],
+                Tmin = (10, 'K'),
+                Tmax = (556.754, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-7.01886, 0.10676, -6.61404e-05, 1.95763e-08, -2.22479e-12, 4073.4, 55.2604],
+                Tmin = (556.754, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (27.3577, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (582.013, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for C=1C=CC2CCCCC2C1 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+""",
+)
