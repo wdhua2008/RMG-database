@@ -1401,6 +1401,7 @@ Taken from entry: C6H5 + C3H6 <=> i1
 )
 
 entry(
+<<<<<<< HEAD
     index = 84,
     label = "propene_2 + C6H5 <=> C9H11-2",
     degeneracy = 1.0,
