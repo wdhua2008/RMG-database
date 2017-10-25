@@ -637,7 +637,7 @@ DOI: 10.1002/chem.201301381
 entry(
     index = 12,
     label = "Benzyl_P",
-    group = 
+    group =
 """
 1 * Cs u1 {2,S} {3,S} {4,S}
 2   Cb u0 {1,S}
@@ -646,14 +646,20 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([0.75,0.6,0.13,-0.42,-1.41,-2.18,-2.18],'cal/(mol*K)'),
-        H298 = (88.5,'kcal/mol','+|-',0.1),
-        S298 = (-4.74,'cal/(mol*K)'),
+        Cpdata = ([0.492000,0.642000,0.109000,-0.656000,-1.606000,-2.293000,-4.101000],'cal/(mol*K)'),
+        H298 = (90.788000,'kcal/mol','+|-',2.4),
+        S298 = (-5.163000,'cal/(mol*K)'),
     ),
-    shortDesc = u"""LAY et al.""",
-    longDesc = 
-u"""
+    shortDesc = u"""Fitted From  Calculations from Hexylbenzene Library, Lawrence Lai""",
+    longDesc =
+u""""
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
 
+Uncertainty of CBS-QB3 is 2.4kcal/mol, by Somers, K, and Simmie, J, "Benchmarking Compound Methods (CBS-QB3, CBS-APNO, G3, G4, W1BD") against the Active Thermochemical  Tables: Formation Enthalpies of Radicals. 2015.
+http://pubs.acs.org/doi/abs/10.1021/acs.jpca.5b05448
+
+Model Compounds Include
+[CH2]C1C=CC=CC=1
 """,
 )
 
@@ -2455,7 +2461,7 @@ u"""
 entry(
     index = 24,
     label = "Benzyl_S",
-    group = 
+    group =
 """
 1 * Cs u1 {2,S} {3,S} {4,S}
 2   Cb u0 {1,S}
@@ -2464,14 +2470,24 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([0.87,0.09,-0.63,-1.21,-2.07,-2.69,-2.69],'cal/(mol*K)'),
-        H298 = (85.9,'kcal/mol'),
-        S298 = (-5.04,'cal/(mol*K)'),
+        Cpdata = ([-0.044800,-1.300200,-2.199000,-2.554600,-2.587200,-2.807400,-5.633600],'cal/(mol*K)'),
+        H298 = (88.064000,'kcal/mol','+|-',2.4),
+        S298 = (-4.855400,'cal/(mol*K)'),
     ),
-    shortDesc = u"""LAY et al.""",
-    longDesc = 
-u"""
+    shortDesc = u"""Fitted From Calculations from Hexylbenzene Library, Lawrence Lai""",
+    longDesc =
+u""""
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
 
+Uncertainty of CBS-QB3 is 2.4kcal/mol, by Somers, K, and Simmie, J, "Benchmarking Compound Methods (CBS-QB3, CBS-APNO, G3, G4, W1BD") against the Active Thermochemical  Tables: Formation Enthalpies of Radicals. 2015.
+http://pubs.acs.org/doi/abs/10.1021/acs.jpca.5b05448
+
+Model Compounds Include
+C[CH]C1C=CC=CC=1
+CC[CH]C1C=CC=CC=1
+CCC[CH]C1C=CC=CC=1
+CCCC[CH]C1C=CC=CC=1
+CCCCC[CH]C1C=CC=CC=1
 """,
 )
 
@@ -2497,6 +2513,76 @@ entry(
     longDesc = 
 u"""
 
+""",
+)
+
+entry(
+    index = 2001,
+    label = "C=CCJC=C-cyclohexadiene",
+    group =
+"""
+1 * Cs u1 {2,S} {6,S} {7,S}
+2   Cd u0 {1,S} {3,D}
+3   Cd u0 {2,D} {4,S}
+4   Cs u0 {3,S} {5,S}
+5   Cd u0 {4,S} {6,D}
+6   Cd u0 {5,D} {1,S}
+7   H u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0.683125,-0.864375,-2.058625,-2.861250,-3.395125,-3.733875,-4.995250],'cal/(mol*K)'),
+        H298 = (74.463375,'kcal/mol','+|-',2.4),
+        S298 = (-4.886125,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
+    longDesc =
+u""""
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Uncertainty of CBS-QB3 is 2.4kcal/mol, by Somers, K, and Simmie, J, "Benchmarking Compound Methods (CBS-QB3, CBS-APNO, G3, G4, W1BD") against the Active Thermochemical  Tables: Formation Enthalpies of Radicals. 2015.
+http://pubs.acs.org/doi/abs/10.1021/acs.jpca.5b05448
+
+Model Species used include:
+CC1=C[CH]C=CC1
+CC1[CH]C=CCC=1
+C[C]1C=CCC=C1
+CC1C=C[CH]C=C1
+CCCCCCC1=C[CH]C=CC1
+CCCCCCC1[CH]C=CCC=1
+CCCCCC[C]1C=CCC=C1
+CCCCCCC1C=C[CH]C=C1
+""",
+)
+
+entry(
+    index = 2002,
+    label = "CJC=CC=C-cyclohexadiene",
+    group =
+"""
+1 * Cs u1 {2,S} {6,S} {7,S}
+2   Cd u0 {1,S} {3,D}
+3   Cd u0 {2,D} {4,S}
+4   Cd u0 {3,S} {5,D}
+5   Cd u0 {4,D} {6,S}
+6   Cs u0 {5,S} {1,S}
+7   H u0 {1,S}
+""",
+    thermo = u'C=CCJC=C-cyclohexadiene',
+    shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
+    longDesc =
+u""""
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Model Species used include:
+CC1=C[CH]C=CC1
+CC1[CH]C=CCC=1
+C[C]1C=CCC=C1
+CC1C=C[CH]C=C1
+CCCCCCC1=C[CH]C=CC1
+CCCCCCC1[CH]C=CCC=1
+CCCCCC[C]1C=CCC=C1
+CCCCCCC1C=C[CH]C=C1
 """,
 )
 
@@ -2951,6 +3037,37 @@ entry(
     longDesc = 
 u"""
 
+""",
+)
+
+entry(
+    index = 2003,
+    label = "C=CCJ(C)C=C-cyclohexadiene",
+    group =
+"""
+1 * Cs u1 {2,S} {6,S} {7,S}
+2   Cd u0 {1,S} {3,D}
+3   Cd u0 {2,D} {4,S}
+4   Cs u0 {3,S} {5,S}
+5   Cd u0 {4,S} {6,D}
+6   Cd u0 {5,D} {1,S}
+7   C u0 {1,S}
+""",
+    thermo = u'C=CCJC=C-cyclohexadiene',
+    shortDesc = u"""Calculations from Hexylbenzene Library, Lawrence Lai""",
+    longDesc =
+u""""
+Based on CBS-QB3 calculations and group values for radical groups already present in the database, 7/2017, Lawrence Lai
+
+Model Species used include:
+CC1=C[CH]C=CC1
+CC1[CH]C=CCC=1
+C[C]1C=CCC=C1
+CC1C=C[CH]C=C1
+CCCCCCC1=C[CH]C=CC1
+CCCCCCC1[CH]C=CCC=1
+CCCCCC[C]1C=CCC=C1
+CCCCCCC1C=C[CH]C=C1
 """,
 )
 
@@ -8480,6 +8597,8 @@ L1: Radical
                             L8: cyclohexane
                     L6: Benzyl_S
                         L7: Indenyl
+                    L6: C=CCJC=C-cyclohexadiene
+                    L6: CJC=CC=C-cyclohexadiene
                     L6: Allyl_S
                         L7: cyclobutene-allyl
                         L7: cyclopentene-allyl
@@ -8495,6 +8614,7 @@ L1: Radical
                 L5: Cs_T
                     L6: CCJ(C)CO
                         L7: C2CJCOOH
+                    L6: C=CCJ(C)C=C-cyclohexadiene
                     L6: Tertalkyl
                         L7: bicyclo[1.1.0]butane-tertiary
                         L7: bicyclo[2.1.0]pentane-tertiary
