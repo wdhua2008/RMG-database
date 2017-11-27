@@ -1233,3 +1233,55 @@ CBS-QB3
 """,
 )
 
+entry(
+    index = 76,
+    label = "MPO1Q2J <=> MPO1Star + HO2",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(4.891e12, 's^-1'), n=-0.291, Ea=(21.232, 'kcal/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""G4 calculation""",
+    longDesc = 
+u"""
+G4 Calculation with 1-D HR done by Lintao Bu at Nrel
+""",
+)
+
+entry(
+    index = 77,
+    label = "MPO1Q2J3Q <=> MPO1Q2Star + HO2",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(8.255e15, 's^-1'), n=-0.549, Ea=(16.043, 'kcal/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""G4 calculation""",
+    longDesc = 
+u"""
+G4 Calculation with 1-D HR done by Lintao Bu at Nrel
+""",
+)
+
+entry(
+    index = 78,
+    label = "MPO1O3OJ <=> CH2COOCH3 + CH2O",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(5.475e11, 's^-1'), n=0.562, Ea=(14.030, 'kcal/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""G4 calculation""",
+    longDesc = 
+u"""
+G4 Calculation with 1-D HR done by Lintao Bu at Nrel
+""",
+)
+
+entry(
+    index = 79,
+    label = "MPO1O3OJ-2 <=> MPO1O3O + H",
+    degeneracy = 1,
+    kinetics = Arrhenius(A=(5.010e9, 's^-1'), n=1.352, Ea=(16.741, 'kcal/mol'), T0=(1, 'K')),
+    rank = 3,
+    shortDesc = u"""G4 calculation""",
+    longDesc = 
+u"""
+G4 Calculation with 1-D HR done by Lintao Bu at Nrel
+""",
+)
+
