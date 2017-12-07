@@ -2797,7 +2797,7 @@ Location of calculations Pharos/home/laitcl/Gaussian/Ethyltetralin
 
 
 entry(
-    index = 46,
+    index = 48,
     label = "Methyltetralin",
     molecule = 
 """
