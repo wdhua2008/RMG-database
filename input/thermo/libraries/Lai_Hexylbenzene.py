@@ -2221,7 +2221,6 @@ entry(
 22 H u0 p0 c0 {8,S}
 23 H u0 p0 c0 {9,S}
 24 H u0 p0 c0 {10,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -2250,3 +2249,611 @@ Hindered Rotors Included: None
 Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
 """,
 )
+
+
+entry(
+    index = 39,
+    label = "Methylindane",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,S} {11,S} {12,S} {13,S}
+2  C u0 p0 c0 {1,S} {3,S} {10,S} {14,S}
+3  C u0 p0 c0 {2,S} {4,S} {15,S} {16,S}
+4  C u0 p0 c0 {3,S} {5,S} {17,S} {18,S}
+5  C u0 p0 c0 {4,S} {6,D} {10,S}
+6  C u0 p0 c0 {5,D} {7,S} {19,S}
+7  C u0 p0 c0 {6,S} {8,D} {20,S}
+8  C u0 p0 c0 {7,D} {9,S} {21,S}
+9  C u0 p0 c0 {8,S} {10,D} {22,S}
+10 C u0 p0 c0 {2,S} {5,S} {9,D}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {2,S}
+15 H u0 p0 c0 {3,S}
+16 H u0 p0 c0 {3,S}
+17 H u0 p0 c0 {4,S}
+18 H u0 p0 c0 {4,S}
+19 H u0 p0 c0 {6,S}
+20 H u0 p0 c0 {7,S}
+21 H u0 p0 c0 {8,S}
+22 H u0 p0 c0 {9,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.92096, 0.00515781, 0.000281383, -5.4323e-07, 3.41557e-10, -137.524, 12.5997],
+                Tmin = (10, 'K'),
+                Tmax = (409.297, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-5.73827, 0.099538, -6.44375e-05, 1.99373e-08, -2.36147e-12, 653.326, 50.573],
+                Tmin = (409.297, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-1.15498, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (527.969, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CC1CCC2=CC=CC=C21 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Indane
+""",
+)
+
+
+entry(
+    index = 40,
+    label = "Ethylindane",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,S} {12,S} {13,S} {14,S}
+2  C u0 p0 c0 {1,S} {3,S} {15,S} {16,S}
+3  C u0 p0 c0 {2,S} {4,S} {11,S} {17,S}
+4  C u0 p0 c0 {3,S} {5,S} {18,S} {19,S}
+5  C u0 p0 c0 {4,S} {6,S} {20,S} {21,S}
+6  C u0 p0 c0 {5,S} {7,D} {11,S}
+7  C u0 p0 c0 {6,D} {8,S} {22,S}
+8  C u0 p0 c0 {7,S} {9,D} {23,S}
+9  C u0 p0 c0 {8,D} {10,S} {24,S}
+10 C u0 p0 c0 {9,S} {11,D} {25,S}
+11 C u0 p0 c0 {3,S} {6,S} {10,D}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {1,S}
+15 H u0 p0 c0 {2,S}
+16 H u0 p0 c0 {2,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {4,S}
+19 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {5,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {7,S}
+23 H u0 p0 c0 {8,S}
+24 H u0 p0 c0 {9,S}
+25 H u0 p0 c0 {10,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.65715, 0.0324995, 0.000173031, -3.02031e-07, 1.51736e-10, -3254.41, 12.9243],
+                Tmin = (10, 'K'),
+                Tmax = (650.823, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-1.68411, 0.0994848, -6.00804e-05, 1.73971e-08, -1.94243e-12, -3282.57, 30.841],
+                Tmin = (650.823, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-27.1045, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (598.642, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CCC1CCC2=CC=CC=C21 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Indane
+""",
+)
+
+
+entry(
+    index = 41,
+    label = "Propylindane",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,S} {13,S} {14,S} {15,S}
+2  C u0 p0 c0 {1,S} {3,S} {16,S} {17,S}
+3  C u0 p0 c0 {2,S} {4,S} {18,S} {19,S}
+4  C u0 p0 c0 {3,S} {5,S} {12,S} {20,S}
+5  C u0 p0 c0 {4,S} {6,S} {21,S} {22,S}
+6  C u0 p0 c0 {5,S} {7,S} {23,S} {24,S}
+7  C u0 p0 c0 {6,S} {8,D} {12,S}
+8  C u0 p0 c0 {7,D} {9,S} {25,S}
+9  C u0 p0 c0 {8,S} {10,D} {26,S}
+10 C u0 p0 c0 {9,D} {11,S} {27,S}
+11 C u0 p0 c0 {10,S} {12,D} {28,S}
+12 C u0 p0 c0 {4,S} {7,S} {11,D}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {1,S}
+15 H u0 p0 c0 {1,S}
+16 H u0 p0 c0 {2,S}
+17 H u0 p0 c0 {2,S}
+18 H u0 p0 c0 {3,S}
+19 H u0 p0 c0 {3,S}
+20 H u0 p0 c0 {4,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {5,S}
+23 H u0 p0 c0 {6,S}
+24 H u0 p0 c0 {6,S}
+25 H u0 p0 c0 {8,S}
+26 H u0 p0 c0 {9,S}
+27 H u0 p0 c0 {10,S}
+28 H u0 p0 c0 {11,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.40999, 0.0552511, 0.000114719, -2.14633e-07, 1.03074e-10, -6379.51, 13.8328],
+                Tmin = (10, 'K'),
+                Tmax = (710.114, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [0.289053, 0.106048, -6.27461e-05, 1.78466e-08, -1.96282e-12, -6773.77, 21.9242],
+                Tmin = (710.114, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-53.0952, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (669.315, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CCCC1CCC2=CC=CC=C21 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+""",
+)
+
+
+entry(
+    index = 42,
+    label = "MethylindaneRad",
+    molecule = 
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {12,S} {13,S} {14,S}
+2  C u0 p0 c0 {1,S} {3,S} {11,S} {15,S}
+3  C u0 p0 c0 {2,S} {4,S} {16,S} {17,S}
+4  C u0 p0 c0 {3,S} {5,S} {18,S} {19,S}
+5  C u0 p0 c0 {4,S} {6,D} {11,S}
+6  C u0 p0 c0 {5,D} {7,S} {20,S}
+7  C u0 p0 c0 {6,S} {8,D} {21,S}
+8  C u0 p0 c0 {7,D} {9,S} {22,S}
+9  C u1 p0 c0 {8,S} {10,S} {11,S}
+10 H u0 p0 c0 {9,S}
+11 C u0 p0 c0 {2,S} {5,S} {9,S} {23,S}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {1,S}
+15 H u0 p0 c0 {2,S}
+16 H u0 p0 c0 {3,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {4,S}
+19 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {6,S}
+21 H u0 p0 c0 {7,S}
+22 H u0 p0 c0 {8,S}
+23 H u0 p0 c0 {11,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.87145, 0.00797269, 0.000286891, -5.46886e-07, 3.30988e-10, 15350.8, 13.2438],
+                Tmin = (10, 'K'),
+                Tmax = (495.001, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-4.82043, 0.101076, -6.45337e-05, 1.9735e-08, -2.31577e-12, 15931.1, 46.2352],
+                Tmin = (495.001, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (127.595, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (552.912, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CC1CCC2=CC=C[CH]C21 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Indane
+""",
+)
+
+
+entry(
+    index = 43,
+    label = "EthylindaneRad",
+    molecule = 
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {13,S} {14,S} {15,S}
+2  C u0 p0 c0 {1,S} {3,S} {16,S} {17,S}
+3  C u0 p0 c0 {2,S} {4,S} {12,S} {18,S}
+4  C u0 p0 c0 {3,S} {5,S} {19,S} {20,S}
+5  C u0 p0 c0 {4,S} {6,S} {21,S} {22,S}
+6  C u0 p0 c0 {5,S} {7,D} {12,S}
+7  C u0 p0 c0 {6,D} {8,S} {23,S}
+8  C u0 p0 c0 {7,S} {9,D} {24,S}
+9  C u0 p0 c0 {8,D} {10,S} {25,S}
+10 C u1 p0 c0 {9,S} {11,S} {12,S}
+11 H u0 p0 c0 {10,S}
+12 C u0 p0 c0 {3,S} {6,S} {10,S} {26,S}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {1,S}
+15 H u0 p0 c0 {1,S}
+16 H u0 p0 c0 {2,S}
+17 H u0 p0 c0 {2,S}
+18 H u0 p0 c0 {3,S}
+19 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {4,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {5,S}
+23 H u0 p0 c0 {7,S}
+24 H u0 p0 c0 {8,S}
+25 H u0 p0 c0 {9,S}
+26 H u0 p0 c0 {12,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.5731, 0.0392082, 0.000162014, -2.91624e-07, 1.47965e-10, 12244, 13.3699],
+                Tmin = (10, 'K'),
+                Tmax = (647.822, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-1.35071, 0.102782, -6.19964e-05, 1.79457e-08, -2.00379e-12, 12185.9, 29.6145],
+                Tmin = (647.822, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (101.746, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (623.585, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CCC1CCC2=CC=C[CH]C21 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Indane
+""",
+)
+
+
+entry(
+    index = 44,
+    label = "PropylindaneRad",
+    molecule = 
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {14,S} {15,S} {16,S}
+2  C u0 p0 c0 {1,S} {3,S} {17,S} {18,S}
+3  C u0 p0 c0 {2,S} {4,S} {19,S} {20,S}
+4  C u0 p0 c0 {3,S} {5,S} {13,S} {21,S}
+5  C u0 p0 c0 {4,S} {6,S} {22,S} {23,S}
+6  C u0 p0 c0 {5,S} {7,S} {24,S} {25,S}
+7  C u0 p0 c0 {6,S} {8,D} {13,S}
+8  C u0 p0 c0 {7,D} {9,S} {26,S}
+9  C u0 p0 c0 {8,S} {10,D} {27,S}
+10 C u0 p0 c0 {9,D} {11,S} {28,S}
+11 C u1 p0 c0 {10,S} {12,S} {13,S}
+12 H u0 p0 c0 {11,S}
+13 C u0 p0 c0 {4,S} {7,S} {11,S} {29,S}
+14 H u0 p0 c0 {1,S}
+15 H u0 p0 c0 {1,S}
+16 H u0 p0 c0 {1,S}
+17 H u0 p0 c0 {2,S}
+18 H u0 p0 c0 {2,S}
+19 H u0 p0 c0 {3,S}
+20 H u0 p0 c0 {3,S}
+21 H u0 p0 c0 {4,S}
+22 H u0 p0 c0 {5,S}
+23 H u0 p0 c0 {5,S}
+24 H u0 p0 c0 {6,S}
+25 H u0 p0 c0 {6,S}
+26 H u0 p0 c0 {8,S}
+27 H u0 p0 c0 {9,S}
+28 H u0 p0 c0 {10,S}
+29 H u0 p0 c0 {13,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.33, 0.0603379, 0.000113878, -2.24108e-07, 1.11512e-10, 9175.45, 14.2106],
+                Tmin = (10, 'K'),
+                Tmax = (683.912, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [0.178328, 0.1105, -6.57292e-05, 1.8805e-08, -2.07976e-12, 8864.52, 22.7933],
+                Tmin = (683.912, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (76.2158, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (694.258, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CCCC1CCC2=CC=C[CH]C21 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+""",
+)
+
+
+entry(
+    index = 45,
+    label = "Tetralin",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,S} {12,S} {13,S} {14,S}
+2  C u0 p0 c0 {1,S} {3,S} {11,S} {15,S}
+3  C u0 p0 c0 {2,S} {4,S} {16,S} {17,S}
+4  C u0 p0 c0 {3,S} {5,S} {18,S} {19,S}
+5  C u0 p0 c0 {4,S} {6,S} {20,S} {21,S}
+6  C u0 p0 c0 {5,S} {7,D} {11,S}
+7  C u0 p0 c0 {6,D} {8,S} {22,S}
+8  C u0 p0 c0 {7,S} {9,D} {23,S}
+9  C u0 p0 c0 {8,D} {10,S} {24,S}
+10 C u0 p0 c0 {9,S} {11,D} {25,S}
+11 C u0 p0 c0 {2,S} {6,S} {10,D}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {1,S}
+15 H u0 p0 c0 {2,S}
+16 H u0 p0 c0 {3,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {4,S}
+19 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {5,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {7,S}
+23 H u0 p0 c0 {8,S}
+24 H u0 p0 c0 {9,S}
+25 H u0 p0 c0 {10,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.98095, -0.000430483, 0.000276899, -4.72432e-07, 2.5606e-10, -504.573, 12.7905],
+                Tmin = (10, 'K'),
+                Tmax = (561.625, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-5.89597, 0.0980584, -6.13135e-05, 1.82617e-08, -2.08374e-12, 160.996, 50.7912],
+                Tmin = (561.625, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-4.23297, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (532.126, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for C1=CC=C2CCCCC2=C1 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Ethyltetralin
+""",
+)
+
+
+entry(
+    index = 46,
+    label = "Methyltetralin",
+    molecule = 
+"""
+1  C u0 p0 c0 {2,S} {12,S} {13,S} {14,S}
+2  C u0 p0 c0 {1,S} {3,S} {11,S} {15,S}
+3  C u0 p0 c0 {2,S} {4,S} {16,S} {17,S}
+4  C u0 p0 c0 {3,S} {5,S} {18,S} {19,S}
+5  C u0 p0 c0 {4,S} {6,S} {20,S} {21,S}
+6  C u0 p0 c0 {5,S} {7,D} {11,S}
+7  C u0 p0 c0 {6,D} {8,S} {22,S}
+8  C u0 p0 c0 {7,S} {9,D} {23,S}
+9  C u0 p0 c0 {8,D} {10,S} {24,S}
+10 C u0 p0 c0 {9,S} {11,D} {25,S}
+11 C u0 p0 c0 {2,S} {6,S} {10,D}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {1,S}
+15 H u0 p0 c0 {2,S}
+16 H u0 p0 c0 {3,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {4,S}
+19 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {5,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {7,S}
+23 H u0 p0 c0 {8,S}
+24 H u0 p0 c0 {9,S}
+25 H u0 p0 c0 {10,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.90763, 0.00613766, 0.000329619, -6.53365e-07, 4.23669e-10, -4305.36, 13.4762],
+                Tmin = (10, 'K'),
+                Tmax = (395.99, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-6.57847, 0.112047, -7.15083e-05, 2.18617e-08, -2.56504e-12, -3474.77, 54.3529],
+                Tmin = (395.99, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (-35.8053, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (602.799, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CC1CCCC2=CC=CC=C21 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Ethyltetralin
+""",
+)
+
+
+entry(
+    index = 47,
+    label = "TetralinRad",
+    molecule = 
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {11,S} {12,S} {13,S}
+2  C u0 p0 c0 {1,S} {3,S} {14,S} {15,S}
+3  C u0 p0 c0 {2,S} {4,S} {16,S} {17,S}
+4  C u0 p0 c0 {3,S} {5,S} {18,S} {19,S}
+5  C u0 p0 c0 {4,S} {6,D} {11,S}
+6  C u0 p0 c0 {5,D} {7,S} {20,S}
+7  C u0 p0 c0 {6,S} {8,D} {21,S}
+8  C u0 p0 c0 {7,D} {9,S} {22,S}
+9  C u1 p0 c0 {8,S} {10,S} {11,S}
+10 H u0 p0 c0 {9,S}
+11 C u0 p0 c0 {1,S} {5,S} {9,S} {23,S}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {2,S}
+15 H u0 p0 c0 {2,S}
+16 H u0 p0 c0 {3,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {4,S}
+19 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {6,S}
+21 H u0 p0 c0 {7,S}
+22 H u0 p0 c0 {8,S}
+23 H u0 p0 c0 {11,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.90822, 0.00556102, 0.000268158, -4.75068e-07, 2.71104e-10, 13266.1, 12.33],
+                Tmin = (10, 'K'),
+                Tmax = (454.826, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-7.69058, 0.107814, -6.98823e-05, 2.16116e-08, -2.55652e-12, 14318.6, 59.1214],
+                Tmin = (454.826, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (110.266, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (557.07, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CC1CCCC2=CC=C[CH]C21 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Ethyltetralin
+""",
+)
+
+
+entry(
+    index = 46,
+    label = "Methyltetralin",
+    molecule = 
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {13,S} {14,S} {15,S}
+2  C u0 p0 c0 {1,S} {3,S} {12,S} {16,S}
+3  C u0 p0 c0 {2,S} {4,S} {17,S} {18,S}
+4  C u0 p0 c0 {3,S} {5,S} {19,S} {20,S}
+5  C u0 p0 c0 {4,S} {6,S} {21,S} {22,S}
+6  C u0 p0 c0 {5,S} {7,D} {12,S}
+7  C u0 p0 c0 {6,D} {8,S} {23,S}
+8  C u0 p0 c0 {7,S} {9,D} {24,S}
+9  C u0 p0 c0 {8,D} {10,S} {25,S}
+10 C u1 p0 c0 {9,S} {11,S} {12,S}
+11 H u0 p0 c0 {10,S}
+12 C u0 p0 c0 {2,S} {6,S} {10,S} {26,S}
+13 H u0 p0 c0 {1,S}
+14 H u0 p0 c0 {1,S}
+15 H u0 p0 c0 {1,S}
+16 H u0 p0 c0 {2,S}
+17 H u0 p0 c0 {3,S}
+18 H u0 p0 c0 {3,S}
+19 H u0 p0 c0 {4,S}
+20 H u0 p0 c0 {4,S}
+21 H u0 p0 c0 {5,S}
+22 H u0 p0 c0 {5,S}
+23 H u0 p0 c0 {7,S}
+24 H u0 p0 c0 {8,S}
+25 H u0 p0 c0 {9,S}
+26 H u0 p0 c0 {12,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.86316, 0.00863059, 0.000331304, -6.39874e-07, 3.94974e-10, 9272.82, 13.6023],
+                Tmin = (10, 'K'),
+                Tmax = (478.421, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-6.15246, 0.11497, -7.29663e-05, 2.22085e-08, -2.59689e-12, 9972.5, 51.8345],
+                Tmin = (478.421, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (77.0629, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (627.743, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CCC1CCCC2=CC=C[CH]C21 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: None
+Location of calculations Pharos/home/laitcl/Gaussian/Ethyltetralin
+""",
+)
+
