@@ -245,4 +245,3 @@ entry(
     rank = 5,
     shortDesc = u"""see references header of 1,2-Birad_to_alkene/rateLibrary.txt""",
 )
-
