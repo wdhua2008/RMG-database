@@ -2221,7 +2221,6 @@ entry(
 22 H u0 p0 c0 {8,S}
 23 H u0 p0 c0 {9,S}
 24 H u0 p0 c0 {10,S}
-
 """,
     thermo = NASA(
         polynomials = [
@@ -2248,6 +2247,222 @@ u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: None
 Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+""",
+)
+
+entry(
+    index = 39,
+    label = "ToluenePlusCH3Ortho",
+    molecule = 
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
+2  C u0 p0 c0 {1,S} {3,S} {9,D}
+3  C u0 p0 c0 {2,S} {4,S} {5,S} {13,S}
+4  C u0 p0 c0 {3,S} {14,S} {15,S} {16,S}
+5  C u1 p0 c0 {3,S} {6,S} {7,S}
+6  H u0 p0 c0 {5,S}
+7  C u0 p0 c0 {5,S} {8,D} {17,S}
+8  C u0 p0 c0 {7,D} {9,S} {18,S}
+9  C u0 p0 c0 {2,D} {8,S} {19,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {3,S}
+14 H u0 p0 c0 {4,S}
+15 H u0 p0 c0 {4,S}
+16 H u0 p0 c0 {4,S}
+17 H u0 p0 c0 {7,S}
+18 H u0 p0 c0 {8,S}
+19 H u0 p0 c0 {9,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.94447, 0.00371676, 0.000199109, -3.98552e-07, 2.61611e-10, 17316.8, 11.5954],
+                Tmin = (10, 'K'),
+                Tmax = (391.042, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-2.19466, 0.0665475, -4.20309e-05, 1.27717e-08, -1.49365e-12, 17796.7, 35.4456],
+                Tmin = (391.042, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (143.977, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (378.308, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CC1=CC=C[CH]C1C calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: 2
+Location of calculations Pharos/home/laitcl/Gaussian/2017/RingRads
+""",
+)
+
+entry(
+    index = 40,
+    label = "ToluenePlusCH3Meta",
+    molecule = 
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
+2  C u0 p0 c0 {1,S} {3,S} {9,D}
+3  C u1 p0 c0 {2,S} {4,S} {5,S}
+4  H u0 p0 c0 {3,S}
+5  C u0 p0 c0 {3,S} {6,S} {7,S} {13,S}
+6  C u0 p0 c0 {5,S} {14,S} {15,S} {16,S}
+7  C u0 p0 c0 {5,S} {8,D} {17,S}
+8  C u0 p0 c0 {7,D} {9,S} {18,S}
+9  C u0 p0 c0 {2,D} {8,S} {19,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {5,S}
+14 H u0 p0 c0 {6,S}
+15 H u0 p0 c0 {6,S}
+16 H u0 p0 c0 {6,S}
+17 H u0 p0 c0 {7,S}
+18 H u0 p0 c0 {8,S}
+19 H u0 p0 c0 {9,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.94238, 0.00373416, 0.000189866, -3.65712e-07, 2.29978e-10, 17932.8, 11.9908],
+                Tmin = (10, 'K'),
+                Tmax = (408.683, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-2.52355, 0.0669984, -4.2256e-05, 1.28111e-08, -1.49441e-12, 18461.5, 37.4016],
+                Tmin = (408.683, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (149.091, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (378.308, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CC1[CH]C(C)C=CC=1 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: 2
+Location of calculations Pharos/home/laitcl/Gaussian/2017/RingRads
+""",
+)
+
+entry(
+    index = 41,
+    label = "ToluenePlusCH3Para",
+    molecule = 
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
+2  C u0 p0 c0 {1,S} {3,S} {9,D}
+3  C u0 p0 c0 {2,S} {4,D} {13,S}
+4  C u0 p0 c0 {3,D} {5,S} {14,S}
+5  C u0 p0 c0 {4,S} {6,S} {7,S} {15,S}
+6  C u0 p0 c0 {5,S} {16,S} {17,S} {18,S}
+7  C u1 p0 c0 {5,S} {8,S} {9,S}
+8  H u0 p0 c0 {7,S}
+9  C u0 p0 c0 {2,D} {7,S} {19,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {3,S}
+14 H u0 p0 c0 {4,S}
+15 H u0 p0 c0 {5,S}
+16 H u0 p0 c0 {6,S}
+17 H u0 p0 c0 {6,S}
+18 H u0 p0 c0 {6,S}
+19 H u0 p0 c0 {9,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.94034, 0.00368031, 0.000177387, -3.21352e-07, 1.88539e-10, 17945.9, 12.8922],
+                Tmin = (10, 'K'),
+                Tmax = (440.604, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-3.18806, 0.0684758, -4.3479e-05, 1.325e-08, -1.55155e-12, 18573.3, 41.4312],
+                Tmin = (440.604, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (149.191, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (378.308, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CC1C=CC(C)[CH]C=1 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: 2
+Location of calculations Pharos/home/laitcl/Gaussian/2017/RingRads
+""",
+)
+
+entry(
+    index = 42,
+    label = "ToluenePlusCH3Sub",
+    molecule = 
+"""
+multiplicity 2
+1  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
+2  C u0 p0 c0 {1,S} {3,S} {4,S} {8,S}
+3  C u0 p0 c0 {2,S} {13,S} {14,S} {15,S}
+4  C u0 p0 c0 {2,S} {5,D} {16,S}
+5  C u0 p0 c0 {4,D} {6,S} {17,S}
+6  C u0 p0 c0 {5,S} {7,D} {18,S}
+7  C u0 p0 c0 {6,D} {8,S} {19,S}
+8  C u1 p0 c0 {2,S} {7,S} {9,S}
+9  H u0 p0 c0 {8,S}
+10 H u0 p0 c0 {1,S}
+11 H u0 p0 c0 {1,S}
+12 H u0 p0 c0 {1,S}
+13 H u0 p0 c0 {3,S}
+14 H u0 p0 c0 {3,S}
+15 H u0 p0 c0 {3,S}
+16 H u0 p0 c0 {4,S}
+17 H u0 p0 c0 {5,S}
+18 H u0 p0 c0 {6,S}
+19 H u0 p0 c0 {7,S}
+""",
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(
+                coeffs = [3.92063, 0.00475061, 0.000180439, -3.25908e-07, 1.86072e-10, 18796.8, 11.3844],
+                Tmin = (10, 'K'),
+                Tmax = (522.294, 'K'),
+            ),
+            NASAPolynomial(
+                coeffs = [-2.5955, 0.068928, -4.48671e-05, 1.40017e-08, -1.67289e-12, 19282.8, 36.7249],
+                Tmin = (522.294, 'K'),
+                Tmax = (3000, 'K'),
+            ),
+        ],
+        Tmin = (10, 'K'),
+        Tmax = (3000, 'K'),
+        E0 = (156.255, 'kJ/mol'),
+        Cp0 = (33.2579, 'J/(mol*K)'),
+        CpInf = (378.308, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""library value for CC1(C)[CH]C=CC=C1 calculated by Lawrence Lai""",
+    longDesc = 
+u"""
+Level of theory: CBS-QB3
+Hindered Rotors Included: 2
+Location of calculations Pharos/home/laitcl/Gaussian/2017/RingRads
 """,
 )
 
