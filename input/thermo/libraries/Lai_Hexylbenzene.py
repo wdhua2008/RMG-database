@@ -84,7 +84,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: Six
-Location of calculations Pharos/home/laitcl/Gaussian/Hexylbenzene/Cantherm
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzenes
 """,
 )
 
@@ -135,7 +135,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: One
-Location of calculations Pharos/home/laitcl/Gaussian/Hexylbenzene/Cantherm/Styrene
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzenes
 """,
 )
 
@@ -199,7 +199,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 5
-Location of calculations Pharos/home/laitcl/Gaussian/Hexylbenzene/Cantherm/rad1
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals
 """,
 )
 
@@ -248,7 +248,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 3
-Location of calculations Pharos/home/laitcl/Gaussian/Hexylbenzene/Cantherm/Butyl
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aliphatic Radicals
 """,
 )
 
@@ -301,7 +301,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 2
-Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Ethylbenzene
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzenes
 """,
 )
 
@@ -354,7 +354,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 1
-Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Ethylbenzyl
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals
 """,
 )
 
@@ -410,7 +410,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 3
-Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Propylbenzene
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzenes
 """,
 )
 
@@ -467,7 +467,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 2
-Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Propylbenzyl
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals
 """,
 )
 
@@ -526,7 +526,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 4
-Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Butylbenzene
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzenes
 """,
 )
 
@@ -585,7 +585,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 3
-Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Butylbenzyl
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals
 """,
 )
 
@@ -647,7 +647,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 5
-Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Pentylbenzene
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzenes
 """,
 )
 
@@ -709,7 +709,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 4
-Location of calculations Pharos/home/laitcl/Gaussian/AlkylbenzeneRadicals/Cantherm/Pentylbenzyl
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals
 """,
 )
 
@@ -758,7 +758,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: None
-Location of calculations Pharos/home/laitcl/Gaussian/Toluene/Cantherm/Benzyl
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals
 """,
 )
 
@@ -808,7 +808,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 1 - Note: Free Rotors have been found to yield extremely close results
-Location of calculations Pharos/home/laitcl/Gaussian/Toluene/Cantherm/Toluene
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzenes
 """,
 )
 
@@ -861,7 +861,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: None
-Location of calculations Pharos/home/laitcl/Gaussian/Indane/Cantherm/Indane
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Polycyclics/Indanes
 """,
 )
 
@@ -917,7 +917,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: None
-Location of calculations Pharos/home/laitcl/Gaussian/Indane/Cantherm/IndaneRad
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics/Indanes
 """,
 )
 
@@ -980,7 +980,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 2
-Location of calculations Pharos/home/laitcl/Gaussian/Ethyltetralin/Cantherm/Ethyltetralin
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics/Tetralins
 """,
 )
 
@@ -1045,7 +1045,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 2
-Location of calculations Pharos/home/laitcl/Gaussian/Ethyltetralin/Cantherm/EthyltetralinRad
+Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics/Tetralins
 """,
 )
 
@@ -1097,7 +1097,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 4
-Location of calculations Pharos/home/laitcl/Gaussian/HxBUpdated/Cantherm/Pentyl
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aliphatic Radicals
 """,
 )
 
@@ -1162,7 +1162,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 6
-Location of calculations Pharos/home/laitcl/Gaussian/HxBRadicals/Cantherm/Rad2
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals/Hexylbenzene Radicals
 """,
 )
 
@@ -1227,7 +1227,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 6
-Location of calculations Pharos/home/laitcl/Gaussian/HxBRadicals/Cantherm/Rad3
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals/Hexylbenzene Radicals
 """,
 )
 
@@ -1292,7 +1292,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 6
-Location of calculations Pharos/home/laitcl/Gaussian/HxBRadicals/Cantherm/Rad4
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals/Hexylbenzene Radicals
 """,
 )
 
@@ -1357,7 +1357,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 6
-Location of calculations Pharos/home/laitcl/Gaussian/HxBRadicals/Cantherm/Rad5
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals/Hexylbenzene Radicals
 """,
 )
 
@@ -1422,7 +1422,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 6
-Location of calculations Pharos/home/laitcl/Gaussian/HxBRadicals/Cantherm/Rad6
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Alkylbenzene Radicals/Hexylbenzene Radicals
 """,
 )
 
@@ -1474,7 +1474,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 1
-Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/ToluenePlusHOrtho
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals/Toluene Plus H
 """,
 )
 
@@ -1526,7 +1526,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 1
-Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/ToluenePlusHMeta
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals/Toluene Plus H
 """,
 )
 
@@ -1579,7 +1579,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 1
-Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/ToluenePlusHPara
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals/Toluene Plus H
 """,
 )
 
@@ -1631,7 +1631,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 1
-Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/ToluenePlusHSub
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals/Toluene Plus H
 """,
 )
 
@@ -1698,7 +1698,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 6
-Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/HxBPlusHOrtho
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals/Hexylbenzene Plus H
 """,
 )
 
@@ -1765,7 +1765,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 6
-Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/HxBPlusHMeta
+Location of calculations Pharos/home/laitcl/Gaussian/Aromatic Pi Radicals/Hexylbenzene Plus H
 """,
 )
 
@@ -1833,7 +1833,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 6
-Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/HxBPlusHPara
+Location of calculations Pharos/home/laitcl/Gaussian/Aromatic Pi Radicals/Hexylbenzene Plus H
 """,
 )
 
@@ -1901,7 +1901,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 6
-Location of calculations Pharos/home/laitcl/Gaussian/RingRadicals/HxBPlusHSub
+Location of calculations Pharos/home/laitcl/Gaussian/Aromatic Pi Radicals/Hexylbenzene Plus H
 """,
 )
 
@@ -1957,7 +1957,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: None
-Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Polycylics/2_5_6_Dienes
 """,
 )
 
@@ -2013,7 +2013,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: None
-Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Polycylics/2_5_6_Dienes
 """,
 )
 
@@ -2069,7 +2069,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: None
-Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Polycylics/2_5_6_Dienes
 """,
 )
 
@@ -2128,7 +2128,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: None
-Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Polycylics/2_6_6_Dienes
 """,
 )
 
@@ -2187,7 +2187,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: None
-Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Polycylics/2_6_6_Dienes
 """,
 )
 
@@ -2246,7 +2246,7 @@ entry(
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: None
-Location of calculations Pharos/home/laitcl/Gaussian/Polycyclics
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Polycylics/2_6_6_Dienes
 """,
 )
 
@@ -2300,7 +2300,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 2
-Location of calculations Pharos/home/laitcl/Gaussian/2017/RingRads
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals/Toluene Plus CH3
 """,
 )
 
@@ -2354,7 +2354,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 2
-Location of calculations Pharos/home/laitcl/Gaussian/2017/RingRads
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals/Toluene Plus CH3
 """,
 )
 
@@ -2408,7 +2408,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 2
-Location of calculations Pharos/home/laitcl/Gaussian/2017/RingRads
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals/Toluene Plus CH3
 """,
 )
 
@@ -2462,7 +2462,7 @@ multiplicity 2
 u"""
 Level of theory: CBS-QB3
 Hindered Rotors Included: 2
-Location of calculations Pharos/home/laitcl/Gaussian/2017/RingRads
+Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals/Toluene Plus CH3
 """,
 )
 
