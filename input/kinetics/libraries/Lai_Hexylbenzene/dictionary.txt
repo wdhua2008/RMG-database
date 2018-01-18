@@ -248,7 +248,7 @@ CH3
 multiplicity 3
 1 C u2 p1 c0
 
-ToluenePlusHOrtho
+ToluenePlusCH3Ortho
 multiplicity 2
 1  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
 2  C u0 p0 c0 {1,S} {3,D} {8,S}
@@ -270,7 +270,7 @@ multiplicity 2
 18 H u0 p0 c0 {9,S}
 19 H u0 p0 c0 {9,S}
 
-ToluenePlusHMeta
+ToluenePlusCH3Meta
 multiplicity 2
 1  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
 2  C u0 p0 c0 {1,S} {3,S} {9,D}
@@ -292,7 +292,7 @@ multiplicity 2
 18 H u0 p0 c0 {8,S}
 19 H u0 p0 c0 {9,S}
 
-ToluenePlusHPara
+ToluenePlusCH3Para
 multiplicity 2
 1  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
 2  C u0 p0 c0 {1,S} {3,S} {9,D}
@@ -314,7 +314,7 @@ multiplicity 2
 18 H u0 p0 c0 {6,S}
 19 H u0 p0 c0 {9,S}
 
-ToluenePlusHSub
+ToluenePlusCH3Sub
 multiplicity 2
 1  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
 2  C u0 p0 c0 {1,S} {3,S} {4,S} {9,S}
