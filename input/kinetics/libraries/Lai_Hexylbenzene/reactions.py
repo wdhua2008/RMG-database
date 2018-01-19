@@ -46,7 +46,7 @@ entry(
     label = "Hexylbenzene + H <=> HexylbenzenePlusHSub",
     degeneracy = 1,
     kinetics = Arrhenius(A=(8.76237e+07, 'cm^3/(mol*s)'), n=1.70829, Ea=(25.4744, 'kJ/mol'), T0=(1, 'K')),
-    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
+    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory",
     longDesc = 
 """
 Calculation for Hexylbenzene + H in the substituted position to form CCCCCCC1C=C[CH]C=C1
@@ -61,7 +61,7 @@ entry(
     label = "Toluene + H <=> ToluenePlusHOrtho",
     degeneracy = 2,
     kinetics = Arrhenius(A=(1.02442e+09, 'cm^3/(mol*s)'), n=1.43982, Ea=(18.8871, 'kJ/mol'), T0=(1, 'K')),
-    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
+    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory",
     longDesc = 
 """
 Calculation for Toluene + H in the ortho position to form CC1=C[CH]C=CC1
@@ -76,7 +76,7 @@ entry(
     label = "Toluene + H <=> ToluenePlusHMeta",
     degeneracy = 2,
     kinetics = Arrhenius(A=(1.07929e+09, 'cm^3/(mol*s)'), n=1.42903, Ea=(22.7647, 'kJ/mol'), T0=(1, 'K')),
-    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
+    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory",
     longDesc = 
 """
 Calculation for Toluene + H in the Meta position to form CC1[CH]C=CCC=1
@@ -91,7 +91,7 @@ entry(
     label = "Toluene + H <=> ToluenePlusHPara",
     degeneracy = 1,
     kinetics = Arrhenius(A=(1.1233e+09, 'cm^3/(mol*s)'), n=1.42368, Ea=(22.5731, 'kJ/mol'), T0=(1, 'K')),
-    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
+    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory",
     longDesc = 
 """
 Calculation for Toluene + H in the Para position to form C[C]1C=CCC=C1
@@ -106,7 +106,7 @@ entry(
     label = "Toluene + H <=> ToluenePlusHSub",
     degeneracy = 1,
     kinetics = Arrhenius(A=(2.20433e+08, 'cm^3/(mol*s)'), n=1.56916, Ea=(26.7856, 'kJ/mol'), T0=(1, 'K')),
-    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
+    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory",
     longDesc = 
 """
 Calculation for Toluene + H in the Substituted position to form CC1C=C[CH]C=C1
@@ -121,7 +121,7 @@ entry(
     label = "Toluene + CH3 <=> ToluenePlusCH3Ortho",
     degeneracy = 2,
     kinetics = Arrhenius(A=(3383.86, 'cm^3/(mol*s)'), n=2.311, Ea=(37.9756, 'kJ/mol'), T0=(1, 'K')),
-    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
+    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory",
     longDesc = 
 """
 Calculation for Toluene + H in the Ortho position to form CC1=CC=C[CH]C1C
@@ -136,7 +136,7 @@ entry(
     label = "Toluene + CH3 <=> ToluenePlusCH3Meta",
     degeneracy = 2,
     kinetics = Arrhenius(A=(3356.39, 'cm^3/(mol*s)'), n=2.32609, Ea=(41.1979, 'kJ/mol'), T0=(1, 'K')),
-    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
+    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory",
     longDesc = 
 """
 Calculation for Toluene + H in the Meta position to form CC1[CH]C(C)C=CC=1
@@ -151,7 +151,7 @@ entry(
     label = "Toluene + CH3 <=> ToluenePlusCH3Para",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3945.69, 'cm^3/(mol*s)'), n=2.31104, Ea=(41.6199, 'kJ/mol'), T0=(1, 'K')),
-    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
+    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory",
     longDesc = 
 """
 Calculation for Toluene + H in the Para position to form CC1C=CC(C)[CH]C=1
@@ -166,7 +166,7 @@ entry(
     label = "Toluene + CH3 <=> ToluenePlusCH3Sub",
     degeneracy = 1,
     kinetics = Arrhenius(A=(144.44, 'cm^3/(mol*s)'), n=2.6469, Ea=(43.8158, 'kJ/mol'), T0=(1, 'K')),
-    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
+    shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory",
     longDesc = 
 """
 Calculation for Toluene + H in the substituted position to form CC1(C)[CH]C=CC=C1
