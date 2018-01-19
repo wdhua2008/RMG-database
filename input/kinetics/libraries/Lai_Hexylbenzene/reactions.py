@@ -118,7 +118,7 @@ Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals
 
 entry(
     index = 8,
-    label = "Toluene + CH3 <=> ToluenePlusHOrtho",
+    label = "Toluene + CH3 <=> ToluenePlusCH3Ortho",
     degeneracy = 2,
     kinetics = Arrhenius(A=(3383.86, 'cm^3/(mol*s)'), n=2.311, Ea=(37.9756, 'kJ/mol'), T0=(1, 'K')),
     shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
@@ -133,7 +133,7 @@ Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals
 
 entry(
     index = 9,
-    label = "Toluene + CH3 <=> ToluenePlusHMeta",
+    label = "Toluene + CH3 <=> ToluenePlusCH3Meta",
     degeneracy = 2,
     kinetics = Arrhenius(A=(3356.39, 'cm^3/(mol*s)'), n=2.32609, Ea=(41.1979, 'kJ/mol'), T0=(1, 'K')),
     shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
@@ -148,7 +148,7 @@ Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals
 
 entry(
     index = 10,
-    label = "Toluene + CH3 <=> ToluenePlusHPara",
+    label = "Toluene + CH3 <=> ToluenePlusCH3Para",
     degeneracy = 1,
     kinetics = Arrhenius(A=(3945.69, 'cm^3/(mol*s)'), n=2.31104, Ea=(41.6199, 'kJ/mol'), T0=(1, 'K')),
     shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
@@ -163,7 +163,7 @@ Location of calculations Pharos/home/laitcl/Gaussian/2017/Aromatic Pi Radicals
 
 entry(
     index = 11,
-    label = "Toluene + CH3 <=> ToluenePlusHSub",
+    label = "Toluene + CH3 <=> ToluenePlusCH3Sub",
     degeneracy = 1,
     kinetics = Arrhenius(A=(144.44, 'cm^3/(mol*s)'), n=2.6469, Ea=(43.8158, 'kJ/mol'), T0=(1, 'K')),
     shortDesc = u"Calculation performed by Lawrence Lai, December 2017, CBS-QB3 level of theory"
